@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>tiny goldmine — 30 indie-friendly products to study</title>
+<title>tiny goldmine — 30 个值得研究的独立产品样本</title>
 <style>
   :root {
     --bg: #ffffff;
@@ -20,7 +20,7 @@
   html { scroll-behavior: smooth; }
 
   body {
-    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Helvetica Neue", sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "PingFang SC", "Helvetica Neue", sans-serif;
     background: var(--bg);
     color: var(--text);
     font-weight: 400;
@@ -93,7 +93,7 @@
     font-size: 24px;
     color: var(--text-secondary);
     font-weight: 400;
-    line-height: 1.4;
+    line-height: 1.45;
     max-width: 760px;
     margin: 0 auto 64px;
   }
@@ -121,7 +121,7 @@
     font-size: 56px;
     font-weight: 600;
     letter-spacing: -0.035em;
-    line-height: 1.08;
+    line-height: 1.12;
     margin-bottom: 20px;
   }
   .section-subtitle {
@@ -130,7 +130,7 @@
     color: var(--text-secondary);
     max-width: 680px;
     margin: 0 auto 80px;
-    line-height: 1.45;
+    line-height: 1.5;
     font-weight: 400;
   }
 
@@ -154,8 +154,7 @@
     font-size: 13px;
     color: var(--text-secondary);
     font-weight: 500;
-    letter-spacing: 0.02em;
-    text-transform: uppercase;
+    letter-spacing: 0.04em;
     margin-bottom: 16px;
   }
   .insight-card h3 {
@@ -163,12 +162,12 @@
     font-weight: 600;
     margin-bottom: 14px;
     letter-spacing: -0.012em;
-    line-height: 1.25;
+    line-height: 1.3;
   }
   .insight-card p {
     font-size: 14.5px;
     color: var(--text-secondary);
-    line-height: 1.55;
+    line-height: 1.65;
   }
 
   /* Top picks */
@@ -182,8 +181,7 @@
     font-size: 13px;
     color: var(--text-secondary);
     font-weight: 500;
-    letter-spacing: 0.02em;
-    text-transform: uppercase;
+    letter-spacing: 0.04em;
     margin-bottom: 12px;
   }
   .toppicks-header h3 {
@@ -191,13 +189,14 @@
     font-weight: 600;
     letter-spacing: -0.022em;
     margin-bottom: 12px;
-    line-height: 1.15;
+    line-height: 1.2;
   }
   .toppicks-header p {
     font-size: 16px;
     color: var(--text-secondary);
-    max-width: 600px;
+    max-width: 620px;
     margin: 0 auto;
+    line-height: 1.55;
   }
   .toppicks-grid {
     display: grid;
@@ -237,7 +236,7 @@
   .pick-card p {
     font-size: 13.5px;
     color: var(--text-secondary);
-    line-height: 1.55;
+    line-height: 1.65;
     margin-bottom: 22px;
     flex-grow: 1;
   }
@@ -258,20 +257,20 @@
     font-size: 13px;
     color: var(--text-secondary);
     font-weight: 500;
-    letter-spacing: 0.02em;
-    text-transform: uppercase;
+    letter-spacing: 0.04em;
     margin-bottom: 12px;
   }
   .product-group-title {
     font-size: 36px;
     font-weight: 600;
     letter-spacing: -0.022em;
-    line-height: 1.15;
+    line-height: 1.2;
     margin-bottom: 10px;
   }
   .product-group-meta {
     font-size: 15px;
     color: var(--text-secondary);
+    line-height: 1.55;
   }
   .products-grid {
     display: grid;
@@ -295,12 +294,12 @@
     font-weight: 600;
     margin-bottom: 14px;
     letter-spacing: -0.014em;
-    line-height: 1.15;
+    line-height: 1.2;
   }
   .product-oneliner {
     font-size: 16px;
     color: var(--text);
-    line-height: 1.45;
+    line-height: 1.5;
     margin-bottom: 18px;
     font-weight: 400;
   }
@@ -317,7 +316,7 @@
   .product-why {
     font-size: 13.5px;
     color: var(--text-secondary);
-    line-height: 1.55;
+    line-height: 1.65;
     margin-bottom: 28px;
     flex-grow: 1;
   }
@@ -395,7 +394,7 @@
     font-weight: 400;
   }
 
-  /* Responsive — 1024px and below */
+  /* Responsive */
   @media (max-width: 1280px) {
     .toppicks-grid { grid-template-columns: repeat(3, 1fr); }
     .insights-grid { grid-template-columns: repeat(2, 1fr); }
@@ -453,10 +452,10 @@
   <div class="top-nav-inner">
     <a class="top-nav-logo" href="#top">tiny goldmine</a>
     <div class="top-nav-links">
-      <a href="#insights">Insights</a>
-      <a href="#top-picks">Top Picks</a>
-      <a href="#all-products">All Products</a>
-      <a href="#summary">Summary</a>
+      <a href="#insights">洞察</a>
+      <a href="#top-picks">Top 榜单</a>
+      <a href="#all-products">全部产品</a>
+      <a href="#summary">数据总览</a>
     </div>
   </div>
 </nav>
@@ -465,39 +464,39 @@
 <header class="hero">
   <div class="container">
     <h1>tiny goldmine</h1>
-    <p class="subtitle">A reconnaissance pass on 30 indie-friendly products that quietly make money &mdash; chosen for verifiable revenue, low discussion, and reproducible playbooks.</p>
+    <p class="subtitle">一份给独立开发者的侦察报告 —— 30 个有可验证收入、低讨论度、可复刻打法的独立产品样本。</p>
     <div class="hero-stats">
-      <span><span class="stat-num">30</span>Products</span>
-      <span><span class="stat-num">24</span>Countries</span>
-      <span><span class="stat-num">3</span>Categories</span>
+      <span><span class="stat-num">30</span>个产品</span>
+      <span><span class="stat-num">24</span>个国家</span>
+      <span><span class="stat-num">3</span>大类别</span>
     </div>
   </div>
 </header>
 
 <section id="insights">
   <div class="container">
-    <h2 class="section-title">What this run revealed</h2>
-    <p class="section-subtitle">Four observations worth carrying into the next pass.</p>
+    <h2 class="section-title">本次跑出的洞察</h2>
+    <p class="section-subtitle">四条值得带去下一轮的观察。</p>
     <div class="insights-grid">
       <div class="insight-card">
-        <div class="insight-head">Geography</div>
-        <h3>90% non-US, 24 countries</h3>
-        <p>Only three of the thirty products are based in the US. Sri Lanka, Indonesia, Romania, Ukraine, Taiwan and Bulgaria all show up &mdash; samples almost no English-language indie roundup covers.</p>
+        <div class="insight-head">地理分布</div>
+        <h3>90% 非美国,覆盖 24 国</h3>
+        <p>30 个产品里只有 3 个美国团队。斯里兰卡、印尼、罗马尼亚、乌克兰、台湾、保加利亚都跑了出来 —— 这些样本在英文 indie 榜单里几乎从不出现。</p>
       </div>
       <div class="insight-card">
-        <div class="insight-head">Data quality</div>
-        <h3>Zero missing fields</h3>
-        <p>Every product carries a verified pricing URL and at least one growth-signal source link. No field falls back to &ldquo;data not found&rdquo; &mdash; the price of saying no when verification fails.</p>
+        <div class="insight-head">数据质量</div>
+        <h3>零字段缺失</h3>
+        <p>每个产品都有可验证的 pricing URL 加至少一个增长信号源链接。没有任何字段写"未找到公开数据" —— 这是验证失败就直接换样本的代价。</p>
       </div>
       <div class="insight-card">
-        <div class="insight-head">Category balance</div>
-        <h3>Not just AI tools</h3>
-        <p>Fewer than a third of the picks depend on an LLM. Invoicing, clinic management, PDF utilities and resume builders sit alongside AI video clippers &mdash; closer to the real long tail of indie revenue.</p>
+        <div class="insight-head">类型均衡</div>
+        <h3>不只是 AI 工具</h3>
+        <p>明确依赖大模型的不到 1/3。开发票、诊所管理、PDF 工具、简历生成器和 AI 视频剪辑并列 —— 更接近独立开发者真实长尾收入的样子。</p>
       </div>
       <div class="insight-card">
-        <div class="insight-head">Blind spots</div>
-        <h3>LATAM, MENA, Africa, China</h3>
-        <p>Beyond Brazil and Israel, the next run needs deliberate searches in Spanish, Portuguese and Arabic, plus Chinese-language indie communities. Entire regions never surfaced this time.</p>
+        <div class="insight-head">盲区</div>
+        <h3>拉美、中东、非洲、中国出海</h3>
+        <p>除了 Brazil 和 Israel,下一轮需要主动用西班牙语、葡萄牙语、阿拉伯语搜索,还要进中文 indie 社群挖掘。整片区域这次没浮上来。</p>
       </div>
     </div>
   </div>
@@ -505,140 +504,140 @@
 
 <section id="top-picks">
   <div class="container">
-    <h2 class="section-title">Three rankings, five each</h2>
-    <p class="section-subtitle">Read each list with a different lens. The same product rarely tops more than one.</p>
+    <h2 class="section-title">三个 Top 5 榜单</h2>
+    <p class="section-subtitle">每个榜单换一个视角去读。同一个产品很少能同时上多个榜。</p>
 
     <div class="toppicks-block">
       <div class="toppicks-header">
-        <div class="eyebrow">Ranking 01</div>
-        <h3>Secretly making money</h3>
-        <p>Verifiable revenue, near-zero discussion in indie circles, no funding signals, no founder ARR boasts.</p>
+        <div class="eyebrow">榜单 01</div>
+        <h3>偷偷赚钱</h3>
+        <p>有可验证收入、indie 圈讨论度极低、没融资信号、创始人也没公开晒过 ARR。</p>
       </div>
       <div class="toppicks-grid">
         <div class="pick-card">
           <div class="rank">01</div>
           <h4>Cliniko</h4>
-          <div class="pick-country">Australia</div>
-          <p>14 years without raising a cent, prices unchanged since 2011, 65,000+ practitioners paying, 2% of revenue donated &mdash; an explicit refusal of growth-at-all-costs.</p>
-          <a class="pick-visit" href="https://www.cliniko.com/" target="_blank" rel="noopener">Visit &rarr;</a>
+          <div class="pick-country">澳大利亚</div>
+          <p>14 年不融资、2011 年起价格从未上调、65,000+ 医疗专业人士在付费、利润 2% 捐慈善 —— 公开拒绝增长导向。</p>
+          <a class="pick-visit" href="https://www.cliniko.com/" target="_blank" rel="noopener">访问 &rarr;</a>
         </div>
         <div class="pick-card">
           <div class="rank">02</div>
           <h4>Sejda</h4>
-          <div class="pick-country">Netherlands</div>
-          <p>Quietly running since 2010, ARR and team size deliberately unpublished, weird &ldquo;$5 week-pass&rdquo; pricing eating SMB tail next to Smallpdf.</p>
-          <a class="pick-visit" href="https://www.sejda.com/" target="_blank" rel="noopener">Visit &rarr;</a>
+          <div class="pick-country">荷兰</div>
+          <p>2010 年起持续运营,ARR 和团队规模都刻意不公开,用罕见的 $5 周卡定价吃 Smallpdf 旁边的 SMB 长尾。</p>
+          <a class="pick-visit" href="https://www.sejda.com/" target="_blank" rel="noopener">访问 &rarr;</a>
         </div>
         <div class="pick-card">
           <div class="rank">03</div>
           <h4>Hiveage</h4>
-          <div class="pick-country">Sri Lanka</div>
-          <p>10+ years invoicing software out of Colombo, Wikipedia entry, zero funding, no English indie coverage &mdash; a global B2B SaaS that simply persists.</p>
-          <a class="pick-visit" href="https://www.hiveage.com/" target="_blank" rel="noopener">Visit &rarr;</a>
+          <div class="pick-country">斯里兰卡</div>
+          <p>10+ 年发票工具,Colombo 母公司持续招聘,Wikipedia 收录,零融资,几乎无英文 indie 圈讨论 —— 全球 B2B SaaS 极罕见的非英语区样本。</p>
+          <a class="pick-visit" href="https://www.hiveage.com/" target="_blank" rel="noopener">访问 &rarr;</a>
         </div>
         <div class="pick-card">
           <div class="rank">04</div>
           <h4>Mailmeteor</h4>
-          <div class="pick-country">France</div>
-          <p>Seven million users acquired through a single channel &mdash; the Google Workspace Marketplace. Paris team of 1&ndash;10, no outside funding, almost no indie coverage.</p>
-          <a class="pick-visit" href="https://mailmeteor.com/" target="_blank" rel="noopener">Visit &rarr;</a>
+          <div class="pick-country">法国</div>
+          <p>通过 Google Workspace Marketplace 单一渠道吃下 700 万用户。Paris 1-10 人团队,零融资,讨论度低到 YAMM 比它更出名。</p>
+          <a class="pick-visit" href="https://mailmeteor.com/" target="_blank" rel="noopener">访问 &rarr;</a>
         </div>
         <div class="pick-card">
           <div class="rank">05</div>
           <h4>APITemplate.io</h4>
-          <div class="pick-country">Singapore</div>
-          <p>Solo Singaporean founder, zero funding on Crunchbase, distribution entirely through Make / Zapier / n8n integrations while Bannerbear hogs the conversation.</p>
-          <a class="pick-visit" href="https://apitemplate.io/" target="_blank" rel="noopener">Visit &rarr;</a>
+          <div class="pick-country">新加坡</div>
+          <p>新加坡单人创始人 Jacky Tan,Crunchbase 显示零融资,靠 Make / Zapier / n8n 集成做长尾分发,Bannerbear 同赛道却被英文圈忽视。</p>
+          <a class="pick-visit" href="https://apitemplate.io/" target="_blank" rel="noopener">访问 &rarr;</a>
         </div>
       </div>
     </div>
 
     <div class="toppicks-block">
       <div class="toppicks-header">
-        <div class="eyebrow">Ranking 02</div>
-        <h3>Easiest to learn from</h3>
-        <p>Solo MVP in four weeks, no proprietary model, a clear stack and channel pattern you can copy.</p>
+        <div class="eyebrow">榜单 02</div>
+        <h3>最适合独立开发者学习</h3>
+        <p>单人 4 周可做出 MVP,不依赖自研模型,技术栈清晰,有可复刻的渠道路径。</p>
       </div>
       <div class="toppicks-grid">
         <div class="pick-card">
           <div class="rank">01</div>
           <h4>Mailmeteor</h4>
-          <div class="pick-country">France</div>
-          <p>Apps Script + Gmail API + Sheets. Marketplace listing equals distribution. The clearest &ldquo;ride a platform&rsquo;s app store&rdquo; case in the set.</p>
-          <a class="pick-visit" href="https://mailmeteor.com/" target="_blank" rel="noopener">Visit &rarr;</a>
+          <div class="pick-country">法国</div>
+          <p>Apps Script + Gmail API + Sheets。在 Workspace Marketplace 上架即获得分发,本批最干净的"附生大厂渠道"案例。</p>
+          <a class="pick-visit" href="https://mailmeteor.com/" target="_blank" rel="noopener">访问 &rarr;</a>
         </div>
         <div class="pick-card">
           <div class="rank">02</div>
           <h4>Pirsch Analytics</h4>
-          <div class="pick-country">Germany</div>
-          <p>Two-person team to $5K MRR with a Go collector + Postgres / ClickHouse + Stripe. Open-source SDK as developer-acquisition channel.</p>
-          <a class="pick-visit" href="https://pirsch.io/" target="_blank" rel="noopener">Visit &rarr;</a>
+          <div class="pick-country">德国</div>
+          <p>Go 采集 + Postgres / ClickHouse + Stripe,2 人到 $5K MRR。开源 SDK 当开发者获客渠道。</p>
+          <a class="pick-visit" href="https://pirsch.io/" target="_blank" rel="noopener">访问 &rarr;</a>
         </div>
         <div class="pick-card">
           <div class="rank">03</div>
           <h4>HelpKit</h4>
-          <div class="pick-country">Austria</div>
-          <p>Solo founder to $10K+ MRR with Notion API + a static-site renderer + Algolia search + Stripe. Niche-binding to a big platform with bounded risk.</p>
-          <a class="pick-visit" href="https://www.helpkit.so/" target="_blank" rel="noopener">Visit &rarr;</a>
+          <div class="pick-country">奥地利</div>
+          <p>Notion API + 静态站渲染 + Algolia + Stripe,单人 bootstrap 到 $10K+ MRR。绑大平台的低风险 niche 范式。</p>
+          <a class="pick-visit" href="https://www.helpkit.so/" target="_blank" rel="noopener">访问 &rarr;</a>
         </div>
         <div class="pick-card">
           <div class="rank">04</div>
           <h4>Paperbell</h4>
-          <div class="pick-country">United Kingdom</div>
-          <p>Stripe + Calendar + e-signature + email. Flat $47.50/month pushes back on per-client pricing across the coach vertical. Repeat founder leverage.</p>
-          <a class="pick-visit" href="https://paperbell.com/" target="_blank" rel="noopener">Visit &rarr;</a>
+          <div class="pick-country">英国</div>
+          <p>Stripe + 日历 + 电子签 + 邮件。Flat $47.50/月反 per-client 定价模型,连续创业者第二次出手的清晰样本。</p>
+          <a class="pick-visit" href="https://paperbell.com/" target="_blank" rel="noopener">访问 &rarr;</a>
         </div>
         <div class="pick-card">
           <div class="rank">05</div>
           <h4>APITemplate.io</h4>
-          <div class="pick-country">Singapore</div>
-          <p>Puppeteer + S3 + Stripe. Growth comes from being listed inside Make / Zapier / n8n, not from owning the top of the funnel.</p>
-          <a class="pick-visit" href="https://apitemplate.io/" target="_blank" rel="noopener">Visit &rarr;</a>
+          <div class="pick-country">新加坡</div>
+          <p>Puppeteer + S3 + Stripe。在 Make / Zapier / n8n 上架获客而非自营销,证明"零融资靠集成分发"可行。</p>
+          <a class="pick-visit" href="https://apitemplate.io/" target="_blank" rel="noopener">访问 &rarr;</a>
         </div>
       </div>
     </div>
 
     <div class="toppicks-block">
       <div class="toppicks-header">
-        <div class="eyebrow">Ranking 03</div>
-        <h3>Most worth a deeper teardown</h3>
-        <p>Each represents an operating philosophy or geographic sample worth its own write-up.</p>
+        <div class="eyebrow">榜单 03</div>
+        <h3>最值得深入研究</h3>
+        <p>每个都代表一种独立的运营哲学或地理样本,值得写一篇 teardown。</p>
       </div>
       <div class="toppicks-grid">
         <div class="pick-card">
           <div class="rank">01</div>
           <h4>Cliniko</h4>
-          <div class="pick-country">Australia</div>
-          <p>Anti-growth as a stated value: prices frozen since 2011, no funding, 2% of revenue donated. A complete counter-sample to the SaaS playbook.</p>
-          <a class="pick-visit" href="https://www.cliniko.com/" target="_blank" rel="noopener">Visit &rarr;</a>
+          <div class="pick-country">澳大利亚</div>
+          <p>"14 年价格不变 + 拒绝融资 + 利润捐慈善"的反增长主义实践 —— SaaS 主流叙事之外完整的反样本。</p>
+          <a class="pick-visit" href="https://www.cliniko.com/" target="_blank" rel="noopener">访问 &rarr;</a>
         </div>
         <div class="pick-card">
           <div class="rank">02</div>
           <h4>Mailmeteor</h4>
-          <div class="pick-country">France</div>
-          <p>The clearest live case study of riding one channel to seven million users. Tests both the ceiling and the dependency cost of platform parasitism.</p>
-          <a class="pick-visit" href="https://mailmeteor.com/" target="_blank" rel="noopener">Visit &rarr;</a>
+          <div class="pick-country">法国</div>
+          <p>单一渠道(Google Workspace)极限利用做到 700 万用户,验证"附生大厂分销"的天花板和依赖风险。</p>
+          <a class="pick-visit" href="https://mailmeteor.com/" target="_blank" rel="noopener">访问 &rarr;</a>
         </div>
         <div class="pick-card">
           <div class="rank">03</div>
           <h4>Outseta</h4>
-          <div class="pick-country">United States</div>
-          <p>All three co-founders take $210K, transaction take-rate instead of seat pricing, three years before crossing $1.5K MRR. A rare patience-first model.</p>
-          <a class="pick-visit" href="https://www.outseta.com/" target="_blank" rel="noopener">Visit &rarr;</a>
+          <div class="pick-country">美国</div>
+          <p>三创始人全员 $210K 同薪、transaction 抽成而非席位定价、头 3 年才到 $1.5K MRR 仍坚持 —— 罕见的长期主义运营哲学。</p>
+          <a class="pick-visit" href="https://www.outseta.com/" target="_blank" rel="noopener">访问 &rarr;</a>
         </div>
         <div class="pick-card">
           <div class="rank">04</div>
           <h4>Oopy</h4>
-          <div class="pick-country">South Korea</div>
-          <p>Near-zero English coverage, $6 starting price, deep Korean-language SEO. The reference for &ldquo;Asian local market Notion ecosystem&rdquo;.</p>
-          <a class="pick-visit" href="https://www.oopy.io/en" target="_blank" rel="noopener">Visit &rarr;</a>
+          <div class="pick-country">韩国</div>
+          <p>几乎零英文报道、$6 起的极低价、深耕韩文 SEO —— "亚洲市场 Notion 周边"完整对照。</p>
+          <a class="pick-visit" href="https://www.oopy.io/en" target="_blank" rel="noopener">访问 &rarr;</a>
         </div>
         <div class="pick-card">
           <div class="rank">05</div>
           <h4>Snov.io</h4>
-          <div class="pick-country">Ukraine</div>
-          <p>Bootstrapped from Chernihiv to $22.7M ARR through an active war. The non-Western, non-VC indie path stress-tested in a real crisis.</p>
-          <a class="pick-visit" href="https://snov.io/" target="_blank" rel="noopener">Visit &rarr;</a>
+          <div class="pick-country">乌克兰</div>
+          <p>战时乌克兰团队 0 融资跑到 $22.7M ARR —— "非西方 + 完全 bootstrap + 危机环境"三重叠加的稀有路径。</p>
+          <a class="pick-visit" href="https://snov.io/" target="_blank" rel="noopener">访问 &rarr;</a>
         </div>
       </div>
     </div>
@@ -647,124 +646,124 @@
 
 <section id="all-products">
   <div class="container">
-    <h2 class="section-title">All 30 products</h2>
-    <p class="section-subtitle">Grouped by batch &mdash; each batch covers a different swath of categories.</p>
+    <h2 class="section-title">全部 30 个产品</h2>
+    <p class="section-subtitle">按 batch 分组 —— 每个 batch 覆盖一组不同的类别。</p>
 
     <div class="product-group">
       <div class="product-group-header">
         <div class="product-group-eyebrow">Batch 01</div>
-        <h3 class="product-group-title">Micro-SaaS &amp; Dev Tools</h3>
-        <p class="product-group-meta">Notion / Airtable adjacencies, developer utilities, Chrome extensions, and small SaaS &mdash; 10 products.</p>
+        <h3 class="product-group-title">微型 SaaS 与开发者工具</h3>
+        <p class="product-group-meta">Notion / Airtable 周边、开发者小工具、Chrome 插件、微型 SaaS —— 共 10 个。</p>
       </div>
       <div class="products-grid">
 
         <div class="product-card">
           <div class="product-name">Whalesync</div>
-          <div class="product-oneliner">Two-way sync between Notion, Airtable, Webflow and others.</div>
-          <div class="product-tags">Notion / Airtable<span class="dot">&middot;</span>subscription<span class="dot">&middot;</span>United States</div>
-          <div class="product-why">Packages the &ldquo;glue between no-code tools&rdquo; into a standalone paid product. People pay from $39/month for what used to require a Zapier hack.</div>
+          <div class="product-oneliner">Notion / Airtable / Webflow 等之间的双向数据同步。</div>
+          <div class="product-tags">Notion / Airtable<span class="dot">&middot;</span>subscription<span class="dot">&middot;</span>美国</div>
+          <div class="product-why">把 "no-code 工具间的胶水" 做成独立付费产品。$39/月起就有人愿意为这个胶水付费,曾经是大家用 Zapier 凑合的活。</div>
           <div class="product-buttons">
-            <a class="btn" href="https://www.whalesync.com/" target="_blank" rel="noopener">Website &nearr;</a>
-            <a class="btn" href="https://www.whalesync.com/pricing" target="_blank" rel="noopener">Pricing &nearr;</a>
+            <a class="btn" href="https://www.whalesync.com/" target="_blank" rel="noopener">官网 &nearr;</a>
+            <a class="btn" href="https://www.whalesync.com/pricing" target="_blank" rel="noopener">定价 &nearr;</a>
           </div>
         </div>
 
         <div class="product-card">
           <div class="product-name">Oopy</div>
-          <div class="product-oneliner">Turn a Notion page into a website with a custom domain.</div>
-          <div class="product-tags">Notion / Airtable<span class="dot">&middot;</span>subscription<span class="dot">&middot;</span>South Korea</div>
-          <div class="product-why">$6/month entry price plus deep localisation for the Korean market &mdash; a textbook example of how non-English indie products carve out a sub-region.</div>
+          <div class="product-oneliner">把 Notion 页面变成带自定义域名的网站。</div>
+          <div class="product-tags">Notion / Airtable<span class="dot">&middot;</span>subscription<span class="dot">&middot;</span>韩国</div>
+          <div class="product-why">$6/月起的极低价 + 锁死韩国本地市场 —— 教科书级的非英语区独立产品本地化打法。Super.so 已被讨论烂,Oopy 几乎零英文报道。</div>
           <div class="product-buttons">
-            <a class="btn" href="https://www.oopy.io/en" target="_blank" rel="noopener">Website &nearr;</a>
-            <a class="btn" href="https://www.oopy.us/en/pricing" target="_blank" rel="noopener">Pricing &nearr;</a>
+            <a class="btn" href="https://www.oopy.io/en" target="_blank" rel="noopener">官网 &nearr;</a>
+            <a class="btn" href="https://www.oopy.us/en/pricing" target="_blank" rel="noopener">定价 &nearr;</a>
           </div>
         </div>
 
         <div class="product-card">
           <div class="product-name">TablePlus</div>
-          <div class="product-oneliner">Native macOS / Windows GUI client for many databases.</div>
-          <div class="product-tags">Dev tools<span class="dot">&middot;</span>license<span class="dot">&middot;</span>Vietnam</div>
-          <div class="product-why">After Sequel Pro and Postico went silent, TablePlus took the space with a one-time $99 license plus a year of updates &mdash; a deliberately un-SaaS pricing shape.</div>
+          <div class="product-oneliner">原生 macOS / Windows 多数据库 GUI 客户端。</div>
+          <div class="product-tags">开发者工具<span class="dot">&middot;</span>license<span class="dot">&middot;</span>越南</div>
+          <div class="product-why">Sequel Pro / Postico 被收购或停更后,TablePlus 用一次性 $99 license + 一年更新拿下整个空缺市场。反 SaaS 主流的定价形态。</div>
           <div class="product-buttons">
-            <a class="btn" href="https://tableplus.com/" target="_blank" rel="noopener">Website &nearr;</a>
-            <a class="btn" href="https://tableplus.com/pricing" target="_blank" rel="noopener">Pricing &nearr;</a>
+            <a class="btn" href="https://tableplus.com/" target="_blank" rel="noopener">官网 &nearr;</a>
+            <a class="btn" href="https://tableplus.com/pricing" target="_blank" rel="noopener">定价 &nearr;</a>
           </div>
         </div>
 
         <div class="product-card">
           <div class="product-name">Noloco</div>
-          <div class="product-oneliner">Build internal tools and client portals from an Airtable base.</div>
-          <div class="product-tags">Notion / Airtable<span class="dot">&middot;</span>freemium<span class="dot">&middot;</span>Ireland</div>
-          <div class="product-why">Where Softr and Stacker already dominate the buzz, Noloco quietly wins agencies by not penalising you for inviting more end clients.</div>
+          <div class="product-oneliner">用 Airtable 数据一键生成内部工具和客户门户。</div>
+          <div class="product-tags">Notion / Airtable<span class="dot">&middot;</span>freemium<span class="dot">&middot;</span>爱尔兰</div>
+          <div class="product-why">Softr / Stacker 占据讨论度,Noloco 用"按 active user 计价 + 客户访客免费"的不同打法在 agencies 市场默默拿单。</div>
           <div class="product-buttons">
-            <a class="btn" href="https://noloco.io/" target="_blank" rel="noopener">Website &nearr;</a>
-            <a class="btn" href="https://noloco.io/pricing" target="_blank" rel="noopener">Pricing &nearr;</a>
+            <a class="btn" href="https://noloco.io/" target="_blank" rel="noopener">官网 &nearr;</a>
+            <a class="btn" href="https://noloco.io/pricing" target="_blank" rel="noopener">定价 &nearr;</a>
           </div>
         </div>
 
         <div class="product-card">
           <div class="product-name">HelpKit</div>
-          <div class="product-oneliner">Turn Notion docs into a professional help center.</div>
-          <div class="product-tags">Notion / Airtable<span class="dot">&middot;</span>subscription<span class="dot">&middot;</span>Austria</div>
-          <div class="product-why">A solo bootstrapped founder reached $10K+ MRR and then stopped sharing numbers when competitors started copying his landing page. A clean view of a Notion-adjacent ceiling.</div>
+          <div class="product-oneliner">把 Notion 文档变成专业 help center / docs 站。</div>
+          <div class="product-tags">Notion / Airtable<span class="dot">&middot;</span>subscription<span class="dot">&middot;</span>奥地利</div>
+          <div class="product-why">单人 bootstrapped 做到 $10K+ MRR,达到后因被抄袭 landing page 而停止公开数字。展示了 Notion 周边的天花板和速度。</div>
           <div class="product-buttons">
-            <a class="btn" href="https://www.helpkit.so/" target="_blank" rel="noopener">Website &nearr;</a>
-            <a class="btn" href="https://www.helpkit.so/pricing" target="_blank" rel="noopener">Pricing &nearr;</a>
+            <a class="btn" href="https://www.helpkit.so/" target="_blank" rel="noopener">官网 &nearr;</a>
+            <a class="btn" href="https://www.helpkit.so/pricing" target="_blank" rel="noopener">定价 &nearr;</a>
           </div>
         </div>
 
         <div class="product-card">
           <div class="product-name">Text Blaze</div>
-          <div class="product-oneliner">Chrome text snippets with logic, forms and dynamic fields.</div>
-          <div class="product-tags">Chrome ext<span class="dot">&middot;</span>freemium<span class="dot">&middot;</span>United States</div>
-          <div class="product-why">$2.99/month entry undercuts TextExpander hard. 700K Chrome users, 4.9 stars &mdash; evidence that an extension can win on price plus a real DSL.</div>
+          <div class="product-oneliner">Chrome 中插入带逻辑 / 表单 / 动态字段的文本模板。</div>
+          <div class="product-tags">Chrome 插件<span class="dot">&middot;</span>freemium<span class="dot">&middot;</span>美国</div>
+          <div class="product-why">$2.99/月的破坏性低价碾压 TextExpander。70 万 Chrome 用户、4.9 星 —— 插件赛道用价格 + 模板 DSL 双重差异化的样本。</div>
           <div class="product-buttons">
-            <a class="btn" href="https://blaze.today/" target="_blank" rel="noopener">Website &nearr;</a>
-            <a class="btn" href="https://blaze.today/pricing/" target="_blank" rel="noopener">Pricing &nearr;</a>
+            <a class="btn" href="https://blaze.today/" target="_blank" rel="noopener">官网 &nearr;</a>
+            <a class="btn" href="https://blaze.today/pricing/" target="_blank" rel="noopener">定价 &nearr;</a>
           </div>
         </div>
 
         <div class="product-card">
           <div class="product-name">Mailmeteor</div>
-          <div class="product-oneliner">Mass personalised email sent from your Gmail inbox.</div>
-          <div class="product-tags">Micro-SaaS<span class="dot">&middot;</span>freemium<span class="dot">&middot;</span>France</div>
-          <div class="product-why">Seven million users reached entirely through the Google Workspace Marketplace, no paid acquisition, no outside funding. The clearest &ldquo;ride one channel&rdquo; example in the set.</div>
+          <div class="product-oneliner">在 Gmail 里做大批量个性化邮件群发和回复管理。</div>
+          <div class="product-tags">微型 SaaS<span class="dot">&middot;</span>freemium<span class="dot">&middot;</span>法国</div>
+          <div class="product-why">靠 Google Workspace Marketplace 这一个分发渠道 + 零融资做到 700 万用户。本批最干净的"附生大厂渠道"打法。</div>
           <div class="product-buttons">
-            <a class="btn" href="https://mailmeteor.com/" target="_blank" rel="noopener">Website &nearr;</a>
-            <a class="btn" href="https://mailmeteor.com/pricing" target="_blank" rel="noopener">Pricing &nearr;</a>
+            <a class="btn" href="https://mailmeteor.com/" target="_blank" rel="noopener">官网 &nearr;</a>
+            <a class="btn" href="https://mailmeteor.com/pricing" target="_blank" rel="noopener">定价 &nearr;</a>
           </div>
         </div>
 
         <div class="product-card">
           <div class="product-name">APITemplate.io</div>
-          <div class="product-oneliner">Auto-generate PDFs and social images from reusable templates.</div>
-          <div class="product-tags">Dev tools<span class="dot">&middot;</span>freemium<span class="dot">&middot;</span>Singapore</div>
-          <div class="product-why">Same lane as Bannerbear, but a solo Singapore founder with zero funding wins through Make / Zapier / n8n distribution rather than landing-page virality.</div>
+          <div class="product-oneliner">用可复用模板自动生成 PDF / 社交图的 API。</div>
+          <div class="product-tags">开发者工具<span class="dot">&middot;</span>freemium<span class="dot">&middot;</span>新加坡</div>
+          <div class="product-why">Bannerbear 同赛道、新加坡独立创始人、零融资,走 Make / Zapier / n8n 集成的分发路径而非自营销 —— 一个完整的对照样本。</div>
           <div class="product-buttons">
-            <a class="btn" href="https://apitemplate.io/" target="_blank" rel="noopener">Website &nearr;</a>
-            <a class="btn" href="https://apitemplate.io/pricing/" target="_blank" rel="noopener">Pricing &nearr;</a>
+            <a class="btn" href="https://apitemplate.io/" target="_blank" rel="noopener">官网 &nearr;</a>
+            <a class="btn" href="https://apitemplate.io/pricing/" target="_blank" rel="noopener">定价 &nearr;</a>
           </div>
         </div>
 
         <div class="product-card">
           <div class="product-name">DebugBear</div>
-          <div class="product-oneliner">Web performance and Core Web Vitals monitoring.</div>
-          <div class="product-tags">Dev tools<span class="dot">&middot;</span>subscription<span class="dot">&middot;</span>United Kingdom</div>
-          <div class="product-why">A solo UK founder grew the business almost entirely through SEO content on Core Web Vitals keywords, competing with VC-backed SpeedCurve and Calibre.</div>
+          <div class="product-oneliner">网站性能 + Core Web Vitals 持续监控。</div>
+          <div class="product-tags">开发者工具<span class="dot">&middot;</span>subscription<span class="dot">&middot;</span>英国</div>
+          <div class="product-why">纯靠 SEO 内容获客(Core Web Vitals 关键词)+ 单人公司对打 SpeedCurve / Calibre 等基金支持的对手。$49/月起。</div>
           <div class="product-buttons">
-            <a class="btn" href="https://www.debugbear.com/" target="_blank" rel="noopener">Website &nearr;</a>
-            <a class="btn" href="https://www.debugbear.com/pricing" target="_blank" rel="noopener">Pricing &nearr;</a>
+            <a class="btn" href="https://www.debugbear.com/" target="_blank" rel="noopener">官网 &nearr;</a>
+            <a class="btn" href="https://www.debugbear.com/pricing" target="_blank" rel="noopener">定价 &nearr;</a>
           </div>
         </div>
 
         <div class="product-card">
           <div class="product-name">Pirsch Analytics</div>
-          <div class="product-oneliner">GDPR-friendly, cookie-free Google Analytics alternative.</div>
-          <div class="product-tags">Micro-SaaS<span class="dot">&middot;</span>subscription<span class="dot">&middot;</span>Germany</div>
-          <div class="product-why">Two-person German team running on $6/month entry. Differentiates on EU hosting and compliance rather than competing head-on with Plausible / Fathom.</div>
+          <div class="product-oneliner">GDPR 友好、cookie-free 的 Google Analytics 替代。</div>
+          <div class="product-tags">微型 SaaS<span class="dot">&middot;</span>subscription<span class="dot">&middot;</span>德国</div>
+          <div class="product-why">Plausible / Fathom 已是基金支持的明星,但 Pirsch 用德国本土合规 + 2 人团队 + $6/月低价依然能跑通到 $5K MRR。</div>
           <div class="product-buttons">
-            <a class="btn" href="https://pirsch.io/" target="_blank" rel="noopener">Website &nearr;</a>
-            <a class="btn" href="https://pirsch.io/pricing" target="_blank" rel="noopener">Pricing &nearr;</a>
+            <a class="btn" href="https://pirsch.io/" target="_blank" rel="noopener">官网 &nearr;</a>
+            <a class="btn" href="https://pirsch.io/pricing" target="_blank" rel="noopener">定价 &nearr;</a>
           </div>
         </div>
 
@@ -774,118 +773,118 @@
     <div class="product-group">
       <div class="product-group-header">
         <div class="product-group-eyebrow">Batch 02</div>
-        <h3 class="product-group-title">Creator &amp; Doc Tools</h3>
-        <p class="product-group-meta">Creator tools, PDF / document utilities, image / video / audio, form / resume / invoice &mdash; 10 products.</p>
+        <h3 class="product-group-title">创作者与文档工具</h3>
+        <p class="product-group-meta">创作者工具、PDF / 文档、图片 / 视频 / 音频、简历 / 发票生成 —— 共 10 个。</p>
       </div>
       <div class="products-grid">
 
         <div class="product-card">
           <div class="product-name">Tella</div>
-          <div class="product-oneliner">Browser-based screen recorder with built-in brand styling.</div>
-          <div class="product-tags">Creator tools<span class="dot">&middot;</span>subscription<span class="dot">&middot;</span>Netherlands</div>
-          <div class="product-why">A six-person Amsterdam team carving out the &ldquo;browser-first plus brand polish&rdquo; angle while Loom went enterprise post-acquisition.</div>
+          <div class="product-oneliner">浏览器内做有品牌感的产品演示录屏。</div>
+          <div class="product-tags">创作者工具<span class="dot">&middot;</span>subscription<span class="dot">&middot;</span>荷兰</div>
+          <div class="product-why">Loom 被 Atlassian 收购后,Tella 用 "browser-first + 自带品牌包装" 的极小团队差异化打法存活。6 人 Amsterdam 团队。</div>
           <div class="product-buttons">
-            <a class="btn" href="https://www.tella.com/" target="_blank" rel="noopener">Website &nearr;</a>
-            <a class="btn" href="https://www.tella.com/pricing" target="_blank" rel="noopener">Pricing &nearr;</a>
+            <a class="btn" href="https://www.tella.com/" target="_blank" rel="noopener">官网 &nearr;</a>
+            <a class="btn" href="https://www.tella.com/pricing" target="_blank" rel="noopener">定价 &nearr;</a>
           </div>
         </div>
 
         <div class="product-card">
           <div class="product-name">Screen Studio</div>
-          <div class="product-oneliner">macOS screen recorder with auto zoom and smooth transitions.</div>
-          <div class="product-tags">Creator tools<span class="dot">&middot;</span>subscription<span class="dot">&middot;</span>Poland</div>
-          <div class="product-why">A Polish sole proprietorship in Kraków reached 8,000 paying customers in 9 months. Polar opposite of the browser-based route &mdash; heavy native investment, premium positioning.</div>
+          <div class="product-oneliner">macOS 屏幕录制,自动加放大和平滑过渡。</div>
+          <div class="product-tags">创作者工具<span class="dot">&middot;</span>subscription<span class="dot">&middot;</span>波兰</div>
+          <div class="product-why">波兰单人 sole proprietorship 在 9 个月内做到 8,000 付费客户。和浏览器派完全相反 —— 重投资 macOS 原生 + 高端定位。</div>
           <div class="product-buttons">
-            <a class="btn" href="https://screen.studio/" target="_blank" rel="noopener">Website &nearr;</a>
-            <a class="btn" href="https://screen.studio/#pricing" target="_blank" rel="noopener">Pricing &nearr;</a>
+            <a class="btn" href="https://screen.studio/" target="_blank" rel="noopener">官网 &nearr;</a>
+            <a class="btn" href="https://screen.studio/#pricing" target="_blank" rel="noopener">定价 &nearr;</a>
           </div>
         </div>
 
         <div class="product-card">
           <div class="product-name">Cleanvoice AI</div>
-          <div class="product-oneliner">AI removal of filler words, noise and long silences for podcasts.</div>
-          <div class="product-tags">Audio<span class="dot">&middot;</span>subscription<span class="dot">&middot;</span>Romania</div>
-          <div class="product-why">A solo Bucharest founder with zero ads, growing 300% MRR via SaaS SEO &mdash; in a niche where Krisp, Riverside and Adobe Podcast all spend hard.</div>
+          <div class="product-oneliner">AI 自动去除播客的 filler 词、噪音、长停顿。</div>
+          <div class="product-tags">音频处理<span class="dot">&middot;</span>subscription<span class="dot">&middot;</span>罗马尼亚</div>
+          <div class="product-why">Bucharest 单人 solo founder,零广告投放,纯 SaaS SEO 拉新做到 300% MRR 增长 —— 在 Krisp / Adobe Podcast 同赛道闷声前进。</div>
           <div class="product-buttons">
-            <a class="btn" href="https://cleanvoice.ai/" target="_blank" rel="noopener">Website &nearr;</a>
-            <a class="btn" href="https://cleanvoice.ai/pricing/" target="_blank" rel="noopener">Pricing &nearr;</a>
+            <a class="btn" href="https://cleanvoice.ai/" target="_blank" rel="noopener">官网 &nearr;</a>
+            <a class="btn" href="https://cleanvoice.ai/pricing/" target="_blank" rel="noopener">定价 &nearr;</a>
           </div>
         </div>
 
         <div class="product-card">
           <div class="product-name">Sejda</div>
-          <div class="product-oneliner">Online and desktop PDF edit, merge, split and form tools.</div>
-          <div class="product-tags">PDF / Docs<span class="dot">&middot;</span>subscription<span class="dot">&middot;</span>Netherlands</div>
-          <div class="product-why">14 years of deliberately quiet operation, no public ARR or team size, and a rare $5-week-pass pricing curve that eats the long tail next to Smallpdf.</div>
+          <div class="product-oneliner">在线 + 桌面 PDF 编辑 / 合并 / 拆分 / 表单工具集。</div>
+          <div class="product-tags">PDF / 文档<span class="dot">&middot;</span>subscription<span class="dot">&middot;</span>荷兰</div>
+          <div class="product-why">刻意低调 14 年、ARR 和团队规模从未公开、$5 周卡 / $7.5 月这种反 SaaS 主流的灵活定价,稳吃 Smallpdf 旁边的长尾。</div>
           <div class="product-buttons">
-            <a class="btn" href="https://www.sejda.com/" target="_blank" rel="noopener">Website &nearr;</a>
-            <a class="btn" href="https://www.sejda.com/upgrade" target="_blank" rel="noopener">Pricing &nearr;</a>
+            <a class="btn" href="https://www.sejda.com/" target="_blank" rel="noopener">官网 &nearr;</a>
+            <a class="btn" href="https://www.sejda.com/upgrade" target="_blank" rel="noopener">定价 &nearr;</a>
           </div>
         </div>
 
         <div class="product-card">
           <div class="product-name">DocSpring</div>
-          <div class="product-oneliner">POST JSON, GET PDF &mdash; form fill and generation API.</div>
-          <div class="product-tags">PDF / Docs<span class="dot">&middot;</span>subscription<span class="dot">&middot;</span>New Zealand</div>
-          <div class="product-why">A solo Auckland founder built FormAPI from a literal &ldquo;I keep filling out visa forms&rdquo; pain point. Years later it sustains as a developer API at $49 entry.</div>
+          <div class="product-oneliner">POST JSON、GET PDF:PDF 表单填充 + 生成 API。</div>
+          <div class="product-tags">PDF / 文档<span class="dot">&middot;</span>subscription<span class="dot">&middot;</span>新西兰</div>
+          <div class="product-why">Auckland 单人独立开发者从"自己签证表单填不完"的具体痛点起步,十几年持续作为开发者 API 卖到现在。$49 起。</div>
           <div class="product-buttons">
-            <a class="btn" href="https://docspring.com/" target="_blank" rel="noopener">Website &nearr;</a>
-            <a class="btn" href="https://docspring.com/pricing" target="_blank" rel="noopener">Pricing &nearr;</a>
+            <a class="btn" href="https://docspring.com/" target="_blank" rel="noopener">官网 &nearr;</a>
+            <a class="btn" href="https://docspring.com/pricing" target="_blank" rel="noopener">定价 &nearr;</a>
           </div>
         </div>
 
         <div class="product-card">
           <div class="product-name">Kickresume</div>
-          <div class="product-oneliner">Resume, cover letter and personal site builder with AI.</div>
-          <div class="product-tags">Resume<span class="dot">&middot;</span>freemium<span class="dot">&middot;</span>Slovakia</div>
-          <div class="product-why">$1.9M revenue and 8K customers reported publicly via Latka, yet barely a mention in English indie circles compared to Resume.io or Enhancv.</div>
+          <div class="product-oneliner">简历 / cover letter / 个人网站三合一模板与 AI 生成。</div>
+          <div class="product-tags">简历生成<span class="dot">&middot;</span>freemium<span class="dot">&middot;</span>斯洛伐克</div>
+          <div class="product-why">Latka 公开数据 2024 $1.9M ARR / 8K 客户,在英文 indie 圈讨论度被 Resume.io / Enhancv 等远远甩开。</div>
           <div class="product-buttons">
-            <a class="btn" href="https://www.kickresume.com/" target="_blank" rel="noopener">Website &nearr;</a>
-            <a class="btn" href="https://www.kickresume.com/en/pricing/" target="_blank" rel="noopener">Pricing &nearr;</a>
+            <a class="btn" href="https://www.kickresume.com/" target="_blank" rel="noopener">官网 &nearr;</a>
+            <a class="btn" href="https://www.kickresume.com/en/pricing/" target="_blank" rel="noopener">定价 &nearr;</a>
           </div>
         </div>
 
         <div class="product-card">
           <div class="product-name">Hiveage</div>
-          <div class="product-oneliner">Invoicing, time tracking and billing for freelancers.</div>
-          <div class="product-tags">Invoice<span class="dot">&middot;</span>freemium<span class="dot">&middot;</span>Sri Lanka</div>
-          <div class="product-why">Colombo-built, 10+ years live, zero funding, no English indie coverage. A textbook quiet-persistence sample from a region rarely represented in B2B SaaS.</div>
+          <div class="product-oneliner">面向自由职业者和小公司的发票 + 计时 + 账单。</div>
+          <div class="product-tags">发票生成<span class="dot">&middot;</span>freemium<span class="dot">&middot;</span>斯里兰卡</div>
+          <div class="product-why">Colombo 出品、10+ 年存活、零融资、Wikipedia 收录但英文 indie 圈零讨论。Sri Lanka 全球 B2B SaaS 的稀有样本。</div>
           <div class="product-buttons">
-            <a class="btn" href="https://www.hiveage.com/" target="_blank" rel="noopener">Website &nearr;</a>
-            <a class="btn" href="https://www.hiveage.com/pricing/" target="_blank" rel="noopener">Pricing &nearr;</a>
+            <a class="btn" href="https://www.hiveage.com/" target="_blank" rel="noopener">官网 &nearr;</a>
+            <a class="btn" href="https://www.hiveage.com/pricing/" target="_blank" rel="noopener">定价 &nearr;</a>
           </div>
         </div>
 
         <div class="product-card">
           <div class="product-name">Tape It</div>
-          <div class="product-oneliner">High-quality iPhone recorder for musicians with AI denoising.</div>
-          <div class="product-tags">Audio<span class="dot">&middot;</span>subscription<span class="dot">&middot;</span>Germany</div>
-          <div class="product-why">A five-person distributed team with $20/year pricing serving songwriters only &mdash; an unusually narrow vertical inside the broader creator-tool boom.</div>
+          <div class="product-oneliner">面向音乐人的 iPhone 高音质录音 + AI 去噪。</div>
+          <div class="product-tags">音频处理<span class="dot">&middot;</span>subscription<span class="dot">&middot;</span>德国</div>
+          <div class="product-why">5 人分布式团队、$20/年的破坏性定价、只服务音乐人这一个 narrow vertical —— 反 horizontal 创作工具趋势的样本。</div>
           <div class="product-buttons">
-            <a class="btn" href="https://tape.it/" target="_blank" rel="noopener">Website &nearr;</a>
-            <a class="btn" href="https://tape.it/" target="_blank" rel="noopener">Pricing &nearr;</a>
+            <a class="btn" href="https://tape.it/" target="_blank" rel="noopener">官网 &nearr;</a>
+            <a class="btn" href="https://tape.it/" target="_blank" rel="noopener">定价 &nearr;</a>
           </div>
         </div>
 
         <div class="product-card">
           <div class="product-name">Wisecut</div>
-          <div class="product-oneliner">Automatically cut long video into captioned shorts.</div>
-          <div class="product-tags">Video<span class="dot">&middot;</span>subscription<span class="dot">&middot;</span>Brazil</div>
-          <div class="product-why">Two Brazilian brothers in São Paulo raised $1.29M total &mdash; with Tim Draper personally writing $1M after a coffee &mdash; while Submagic and Opus Clip soaked up the buildinpublic spotlight.</div>
+          <div class="product-oneliner">自动把长视频剪成带字幕的短片。</div>
+          <div class="product-tags">视频处理<span class="dot">&middot;</span>subscription<span class="dot">&middot;</span>巴西</div>
+          <div class="product-why">巴西 São Paulo 兄弟创办、$1.29M 极小融资仍获 Tim Draper 个人 $1M 站台。Latino 创始人用资源 + 渠道打开美国市场的样本。</div>
           <div class="product-buttons">
-            <a class="btn" href="https://www.wisecut.ai/" target="_blank" rel="noopener">Website &nearr;</a>
-            <a class="btn" href="https://www.wisecut.ai/pricing" target="_blank" rel="noopener">Pricing &nearr;</a>
+            <a class="btn" href="https://www.wisecut.ai/" target="_blank" rel="noopener">官网 &nearr;</a>
+            <a class="btn" href="https://www.wisecut.ai/pricing" target="_blank" rel="noopener">定价 &nearr;</a>
           </div>
         </div>
 
         <div class="product-card">
           <div class="product-name">Munch</div>
-          <div class="product-oneliner">AI picks viral clips from long-form video for social.</div>
-          <div class="product-tags">Creator tools<span class="dot">&middot;</span>subscription<span class="dot">&middot;</span>Israel</div>
-          <div class="product-why">A Tel Aviv team with $7.2M seed targeting marketing teams and agencies rather than individual YouTubers &mdash; an explicit B2B angle on the Opus Clip lane.</div>
+          <div class="product-oneliner">AI 从长视频中挑"最 viral"片段生成多平台短片。</div>
+          <div class="product-tags">创作者工具<span class="dot">&middot;</span>subscription<span class="dot">&middot;</span>以色列</div>
+          <div class="product-why">Tel Aviv 团队、$7.2M Seed,明确定位 B2B marketing / agencies 而非个人 YouTuber —— Opus Clip 同赛道下的差异化定位样本。</div>
           <div class="product-buttons">
-            <a class="btn" href="https://www.getmunch.com/" target="_blank" rel="noopener">Website &nearr;</a>
-            <a class="btn" href="https://www.getmunch.com/pricing" target="_blank" rel="noopener">Pricing &nearr;</a>
+            <a class="btn" href="https://www.getmunch.com/" target="_blank" rel="noopener">官网 &nearr;</a>
+            <a class="btn" href="https://www.getmunch.com/pricing" target="_blank" rel="noopener">定价 &nearr;</a>
           </div>
         </div>
 
@@ -895,118 +894,118 @@
     <div class="product-group">
       <div class="product-group-header">
         <div class="product-group-eyebrow">Batch 03</div>
-        <h3 class="product-group-title">Growth &amp; Vertical Tools</h3>
-        <p class="product-group-meta">SEO, marketing automation, coaching, vertical SaaS, personal productivity, B2B small tools &mdash; 10 products.</p>
+        <h3 class="product-group-title">增长与垂直行业工具</h3>
+        <p class="product-group-meta">SEO、营销自动化、教练工具、垂直行业、个人效率、B2B 小工具 —— 共 10 个。</p>
       </div>
       <div class="products-grid">
 
         <div class="product-card">
           <div class="product-name">Mangools</div>
-          <div class="product-oneliner">KWFinder plus a 5-tool low-priced SEO suite.</div>
-          <div class="product-tags">SEO<span class="dot">&middot;</span>subscription<span class="dot">&middot;</span>Slovakia</div>
-          <div class="product-why">$220K+ MRR achieved entirely bootstrapped from Bratislava since 2014 &mdash; sitting between Ahrefs and Semrush at about a tenth of their price.</div>
+          <div class="product-oneliner">KWFinder 等 5 件套的低价 SEO 工具集。</div>
+          <div class="product-tags">SEO 工具<span class="dot">&middot;</span>subscription<span class="dot">&middot;</span>斯洛伐克</div>
+          <div class="product-why">在 Ahrefs / Semrush 两巨头中间用 1/10 价位($29 起)+ Slovakia 团队稳吃 SMB,11+ 年 bootstrapped 不融资。</div>
           <div class="product-buttons">
-            <a class="btn" href="https://mangools.com/" target="_blank" rel="noopener">Website &nearr;</a>
-            <a class="btn" href="https://mangools.com/plans-and-pricing" target="_blank" rel="noopener">Pricing &nearr;</a>
+            <a class="btn" href="https://mangools.com/" target="_blank" rel="noopener">官网 &nearr;</a>
+            <a class="btn" href="https://mangools.com/plans-and-pricing" target="_blank" rel="noopener">定价 &nearr;</a>
           </div>
         </div>
 
         <div class="product-card">
           <div class="product-name">Snov.io</div>
-          <div class="product-oneliner">Email finder, verifier, cold sequence and lightweight CRM.</div>
-          <div class="product-tags">Marketing automation<span class="dot">&middot;</span>freemium<span class="dot">&middot;</span>Ukraine</div>
-          <div class="product-why">A Chernihiv team kept building through wartime to $22.7M ARR and 150K customers &mdash; entirely without VC. The non-Western bootstrap path under genuine stress.</div>
+          <div class="product-oneliner">邮件查找 + 验证 + 冷邮件序列 + 简易 CRM。</div>
+          <div class="product-tags">营销自动化<span class="dot">&middot;</span>freemium<span class="dot">&middot;</span>乌克兰</div>
+          <div class="product-why">战时乌克兰 Chernihiv 团队、完全不融资跑到 $22.7M ARR、150K 客户 —— "非西方 + 完全 bootstrap + 危机环境"三重叠加的稀有样本。</div>
           <div class="product-buttons">
-            <a class="btn" href="https://snov.io/" target="_blank" rel="noopener">Website &nearr;</a>
-            <a class="btn" href="https://snov.io/pricing" target="_blank" rel="noopener">Pricing &nearr;</a>
+            <a class="btn" href="https://snov.io/" target="_blank" rel="noopener">官网 &nearr;</a>
+            <a class="btn" href="https://snov.io/pricing" target="_blank" rel="noopener">定价 &nearr;</a>
           </div>
         </div>
 
         <div class="product-card">
           <div class="product-name">Encharge</div>
-          <div class="product-oneliner">Behavioural email automation built specifically for SaaS.</div>
-          <div class="product-tags">Marketing automation<span class="dot">&middot;</span>subscription<span class="dot">&middot;</span>Bulgaria</div>
-          <div class="product-why">A two-person Sofia team takes on Customer.io and Klaviyo with a SaaS-only positioning, $99 entry, and an Eastern European cost base.</div>
+          <div class="product-oneliner">面向 SaaS 公司的行为触发邮件 + 营销自动化。</div>
+          <div class="product-tags">营销自动化<span class="dot">&middot;</span>subscription<span class="dot">&middot;</span>保加利亚</div>
+          <div class="product-why">Sofia 双人团队对标 Customer.io / Klaviyo,$99 起 + SaaS-only 定位 + 东欧成本结构。</div>
           <div class="product-buttons">
-            <a class="btn" href="https://encharge.io/" target="_blank" rel="noopener">Website &nearr;</a>
-            <a class="btn" href="https://encharge.io/pricing" target="_blank" rel="noopener">Pricing &nearr;</a>
+            <a class="btn" href="https://encharge.io/" target="_blank" rel="noopener">官网 &nearr;</a>
+            <a class="btn" href="https://encharge.io/pricing" target="_blank" rel="noopener">定价 &nearr;</a>
           </div>
         </div>
 
         <div class="product-card">
           <div class="product-name">BirdSend</div>
-          <div class="product-oneliner">Minimal email marketing for creators and coaches.</div>
-          <div class="product-tags">Marketing automation<span class="dot">&middot;</span>subscription<span class="dot">&middot;</span>Indonesia</div>
-          <div class="product-why">A three-person Bali team, no paid acquisition, deliberate 80% discount-to-incumbent pricing &mdash; one of the very few visible Southeast Asian indie B2B SaaS samples.</div>
+          <div class="product-oneliner">面向内容创作者 / 教练的极简邮件营销。</div>
+          <div class="product-tags">营销自动化<span class="dot">&middot;</span>subscription<span class="dot">&middot;</span>印尼</div>
+          <div class="product-why">Bali 独立 3 人团队、零广告、80% 折扣对标 incumbent 定价 —— 极罕见的东南亚 indie B2B SaaS 样本。</div>
           <div class="product-buttons">
-            <a class="btn" href="https://birdsend.co/" target="_blank" rel="noopener">Website &nearr;</a>
-            <a class="btn" href="https://birdsend.co/pricing/" target="_blank" rel="noopener">Pricing &nearr;</a>
+            <a class="btn" href="https://birdsend.co/" target="_blank" rel="noopener">官网 &nearr;</a>
+            <a class="btn" href="https://birdsend.co/pricing/" target="_blank" rel="noopener">定价 &nearr;</a>
           </div>
         </div>
 
         <div class="product-card">
           <div class="product-name">Paperbell</div>
-          <div class="product-oneliner">All-in-one scheduling, contracts and payments for coaches.</div>
-          <div class="product-tags">Coach tools<span class="dot">&middot;</span>subscription<span class="dot">&middot;</span>United Kingdom</div>
-          <div class="product-why">Repeat founder (MeetEdgar) chose one vertical and one flat $47.50/month price &mdash; explicitly pushing back on HoneyBook&rsquo;s per-client ladder.</div>
+          <div class="product-oneliner">教练专用的客户日程 + 合同 + 收款 + 网站一站式。</div>
+          <div class="product-tags">教练工具<span class="dot">&middot;</span>subscription<span class="dot">&middot;</span>英国</div>
+          <div class="product-why">MeetEdgar 连续创业者第二次出手,只服务 coach 一个 vertical,$47.50 flat 定价反 HoneyBook 的按客户阶梯收费。</div>
           <div class="product-buttons">
-            <a class="btn" href="https://paperbell.com/" target="_blank" rel="noopener">Website &nearr;</a>
-            <a class="btn" href="https://paperbell.com/pricing/" target="_blank" rel="noopener">Pricing &nearr;</a>
+            <a class="btn" href="https://paperbell.com/" target="_blank" rel="noopener">官网 &nearr;</a>
+            <a class="btn" href="https://paperbell.com/pricing/" target="_blank" rel="noopener">定价 &nearr;</a>
           </div>
         </div>
 
         <div class="product-card">
           <div class="product-name">Cliniko</div>
-          <div class="product-oneliner">Practice management for allied health clinics and therapists.</div>
-          <div class="product-tags">Vertical SaaS<span class="dot">&middot;</span>subscription<span class="dot">&middot;</span>Australia</div>
-          <div class="product-why">Melbourne-based, 14 years with the same price card, 65,000 practitioners paying, 2% of revenue donated to charity. A complete refusal of the growth-at-all-costs script.</div>
+          <div class="product-oneliner">面向理疗 / 心理 / 综合诊所的预约 + 病历 + 收费。</div>
+          <div class="product-tags">垂直行业<span class="dot">&middot;</span>subscription<span class="dot">&middot;</span>澳大利亚</div>
+          <div class="product-why">Melbourne 独立公司、14 年价格不变、65,000 医疗专业人士付费、利润 2% 捐慈善 —— 完整的反增长主义 SaaS 哲学样本。</div>
           <div class="product-buttons">
-            <a class="btn" href="https://www.cliniko.com/" target="_blank" rel="noopener">Website &nearr;</a>
-            <a class="btn" href="https://www.cliniko.com/pricing/" target="_blank" rel="noopener">Pricing &nearr;</a>
+            <a class="btn" href="https://www.cliniko.com/" target="_blank" rel="noopener">官网 &nearr;</a>
+            <a class="btn" href="https://www.cliniko.com/pricing/" target="_blank" rel="noopener">定价 &nearr;</a>
           </div>
         </div>
 
         <div class="product-card">
           <div class="product-name">Heptabase</div>
-          <div class="product-oneliner">Visual whiteboard-style knowledge base for deep learners.</div>
-          <div class="product-tags">Productivity<span class="dot">&middot;</span>subscription<span class="dot">&middot;</span>Taiwan</div>
-          <div class="product-why">A Taiwanese dropout founder built a YC-backed PKM tool with no free tier and a $659 lifetime license &mdash; visually carved between Notion, Obsidian and Logseq.</div>
+          <div class="product-oneliner">在白板上做可视化知识管理的笔记工具。</div>
+          <div class="product-tags">个人效率<span class="dot">&middot;</span>subscription<span class="dot">&middot;</span>台湾</div>
+          <div class="product-why">台湾 YC 出海、辍学创始人、无免费版 + $659 终身 license,在 Notion / Obsidian / Logseq 三巨头夹缝里做视觉差异化。</div>
           <div class="product-buttons">
-            <a class="btn" href="https://heptabase.com/" target="_blank" rel="noopener">Website &nearr;</a>
-            <a class="btn" href="https://heptabase.com/pricing" target="_blank" rel="noopener">Pricing &nearr;</a>
+            <a class="btn" href="https://heptabase.com/" target="_blank" rel="noopener">官网 &nearr;</a>
+            <a class="btn" href="https://heptabase.com/pricing" target="_blank" rel="noopener">定价 &nearr;</a>
           </div>
         </div>
 
         <div class="product-card">
           <div class="product-name">Akiflow</div>
-          <div class="product-oneliner">Aggregate tasks and calendars into a time-blocking client.</div>
-          <div class="product-tags">Productivity<span class="dot">&middot;</span>subscription<span class="dot">&middot;</span>Italy</div>
-          <div class="product-why">Three Italian Forbes Under 30 founders, YC, $1.8M seed &mdash; running a heavy native client and multi-source aggregation against Sunsama and Motion at $19/month.</div>
+          <div class="product-oneliner">把多源任务和日历合并到一个 time-blocking 客户端。</div>
+          <div class="product-tags">个人效率<span class="dot">&middot;</span>subscription<span class="dot">&middot;</span>意大利</div>
+          <div class="product-why">意大利 Forbes Under 30 三人 + YC + $1.8M 种子。重客户端 + 多源聚合走 Sunsama / Motion 旁边的差异化路线,$19/月。</div>
           <div class="product-buttons">
-            <a class="btn" href="https://akiflow.com/" target="_blank" rel="noopener">Website &nearr;</a>
-            <a class="btn" href="https://akiflow.com/pricing" target="_blank" rel="noopener">Pricing &nearr;</a>
+            <a class="btn" href="https://akiflow.com/" target="_blank" rel="noopener">官网 &nearr;</a>
+            <a class="btn" href="https://akiflow.com/pricing" target="_blank" rel="noopener">定价 &nearr;</a>
           </div>
         </div>
 
         <div class="product-card">
           <div class="product-name">BeforeSunset AI</div>
-          <div class="product-oneliner">AI daily planner that schedules your todo list for you.</div>
-          <div class="product-tags">Productivity<span class="dot">&middot;</span>freemium<span class="dot">&middot;</span>Turkey / US</div>
-          <div class="product-why">Started in Izmir with $250K, broke out via Product Hunt by winning Day, Week and Month back-to-back, then relocated to NYC &mdash; a clean Turkish-to-US trajectory.</div>
+          <div class="product-oneliner">AI 自动安排今日 todo 的日计划工具。</div>
+          <div class="product-tags">个人效率<span class="dot">&middot;</span>freemium<span class="dot">&middot;</span>土耳其 / 美国</div>
+          <div class="product-why">土耳其 Izmir 起步、$250K 极小种子、Product Hunt 三连冠(Day / Week / Month)起家,后迁 NYC —— 土耳其创始人到美国市场的清晰路径。</div>
           <div class="product-buttons">
-            <a class="btn" href="https://www.beforesunset.ai/" target="_blank" rel="noopener">Website &nearr;</a>
-            <a class="btn" href="https://www.beforesunset.ai/pricing" target="_blank" rel="noopener">Pricing &nearr;</a>
+            <a class="btn" href="https://www.beforesunset.ai/" target="_blank" rel="noopener">官网 &nearr;</a>
+            <a class="btn" href="https://www.beforesunset.ai/pricing" target="_blank" rel="noopener">定价 &nearr;</a>
           </div>
         </div>
 
         <div class="product-card">
           <div class="product-name">Outseta</div>
-          <div class="product-oneliner">Bundled subscriptions, CRM, email and help desk for early SaaS.</div>
-          <div class="product-tags">B2B tools<span class="dot">&middot;</span>other<span class="dot">&middot;</span>United States</div>
-          <div class="product-why">Three co-founders all paid $210K, a 2%-to-1% transaction take-rate instead of seat pricing, and three years of $1.5K MRR before things turned &mdash; a long-game outlier worth its own essay.</div>
+          <div class="product-oneliner">早期 B2B SaaS 的订阅 + CRM + 邮件 + 帮助台一体化。</div>
+          <div class="product-tags">B2B 小工具<span class="dot">&middot;</span>other<span class="dot">&middot;</span>美国</div>
+          <div class="product-why">三创始人全员 $210K 同薪、transaction 抽成(2%→1%)而非席位定价、头 3 年才到 $1.5K MRR 仍坚持 —— 极罕见的长期主义运营哲学。</div>
           <div class="product-buttons">
-            <a class="btn" href="https://www.outseta.com/" target="_blank" rel="noopener">Website &nearr;</a>
-            <a class="btn" href="https://www.outseta.com/pricing" target="_blank" rel="noopener">Pricing &nearr;</a>
+            <a class="btn" href="https://www.outseta.com/" target="_blank" rel="noopener">官网 &nearr;</a>
+            <a class="btn" href="https://www.outseta.com/pricing" target="_blank" rel="noopener">定价 &nearr;</a>
           </div>
         </div>
 
@@ -1018,47 +1017,47 @@
 
 <section id="summary">
   <div class="container">
-    <h2 class="section-title">Breakdown</h2>
-    <p class="section-subtitle">Distribution across geography, category and pricing model.</p>
+    <h2 class="section-title">数据总览</h2>
+    <p class="section-subtitle">按地理、类别、定价模式的分布。</p>
     <div class="summary-grid">
 
       <div class="summary-card">
-        <h3>Top geographies</h3>
+        <h3>头部地区</h3>
         <ul class="summary-list">
-          <li><span class="label">United States</span><span class="value">3</span></li>
-          <li><span class="label">Netherlands</span><span class="value">2</span></li>
-          <li><span class="label">Germany</span><span class="value">2</span></li>
-          <li><span class="label">United Kingdom</span><span class="value">2</span></li>
-          <li><span class="label">Slovakia</span><span class="value">2</span></li>
-          <li><span class="label">Other (19 countries)</span><span class="value">19</span></li>
-          <li><span class="label">Total countries</span><span class="value">24</span></li>
+          <li><span class="label">美国</span><span class="value">3</span></li>
+          <li><span class="label">荷兰</span><span class="value">2</span></li>
+          <li><span class="label">德国</span><span class="value">2</span></li>
+          <li><span class="label">英国</span><span class="value">2</span></li>
+          <li><span class="label">斯洛伐克</span><span class="value">2</span></li>
+          <li><span class="label">其他(19 国)</span><span class="value">19</span></li>
+          <li><span class="label">国家总数</span><span class="value">24</span></li>
         </ul>
       </div>
 
       <div class="summary-card">
-        <h3>By category</h3>
+        <h3>按类别</h3>
         <ul class="summary-list">
-          <li><span class="label">Notion / Airtable</span><span class="value">4</span></li>
-          <li><span class="label">Marketing automation</span><span class="value">3</span></li>
-          <li><span class="label">Productivity</span><span class="value">3</span></li>
-          <li><span class="label">Dev tools</span><span class="value">3</span></li>
-          <li><span class="label">Creator tools</span><span class="value">3</span></li>
-          <li><span class="label">Image / Video / Audio</span><span class="value">3</span></li>
-          <li><span class="label">PDF / Docs</span><span class="value">2</span></li>
-          <li><span class="label">Micro-SaaS</span><span class="value">2</span></li>
-          <li><span class="label">Other (7 niches)</span><span class="value">7</span></li>
+          <li><span class="label">Notion / Airtable 周边</span><span class="value">4</span></li>
+          <li><span class="label">营销自动化</span><span class="value">3</span></li>
+          <li><span class="label">个人效率</span><span class="value">3</span></li>
+          <li><span class="label">开发者工具</span><span class="value">3</span></li>
+          <li><span class="label">创作者工具</span><span class="value">3</span></li>
+          <li><span class="label">图片 / 视频 / 音频</span><span class="value">3</span></li>
+          <li><span class="label">PDF / 文档</span><span class="value">2</span></li>
+          <li><span class="label">微型 SaaS</span><span class="value">2</span></li>
+          <li><span class="label">其他(7 个 niche)</span><span class="value">7</span></li>
         </ul>
       </div>
 
       <div class="summary-card">
-        <h3>By pricing model</h3>
+        <h3>按定价模式</h3>
         <ul class="summary-list">
-          <li><span class="label">Subscription</span><span class="value">20</span></li>
-          <li><span class="label">Freemium</span><span class="value">8</span></li>
-          <li><span class="label">License (one-time + renewal)</span><span class="value">1</span></li>
-          <li><span class="label">Other (fixed + transaction %)</span><span class="value">1</span></li>
-          <li><span class="label">US share of sample</span><span class="value">10%</span></li>
-          <li><span class="label">Missing fields</span><span class="value">0</span></li>
+          <li><span class="label">订阅</span><span class="value">20</span></li>
+          <li><span class="label">免费增值</span><span class="value">8</span></li>
+          <li><span class="label">License(永久 + 续期)</span><span class="value">1</span></li>
+          <li><span class="label">其他(fixed + transaction %)</span><span class="value">1</span></li>
+          <li><span class="label">美国占样本比</span><span class="value">10%</span></li>
+          <li><span class="label">未找到字段</span><span class="value">0</span></li>
         </ul>
       </div>
 
@@ -1068,7 +1067,7 @@
 
 <footer>
   <div class="container">
-    tiny goldmine &middot; v1 &middot; generated on 2026-05-12
+    tiny goldmine &middot; v1 &middot; 生成于 2026-05-12
   </div>
 </footer>
 
