@@ -9,6 +9,7 @@
     --bg: #ffffff;
     --text: #1d1d1f;
     --text-secondary: #6e6e73;
+    --text-tertiary: #86868b;
     --accent: #0071e3;
     --accent-hover: #0077ed;
     --card-bg: #fbfbfd;
@@ -63,10 +64,7 @@
     color: var(--text);
     letter-spacing: -0.01em;
   }
-  .top-nav-links {
-    display: flex;
-    gap: 36px;
-  }
+  .top-nav-links { display: flex; gap: 36px; }
   .top-nav-links a {
     font-size: 13.5px;
     font-weight: 400;
@@ -113,9 +111,7 @@
   }
 
   /* Section base */
-  section {
-    padding: 140px 0;
-  }
+  section { padding: 140px 0; }
   .section-title {
     text-align: center;
     font-size: 56px;
@@ -173,10 +169,7 @@
   /* Top picks */
   .toppicks-block { margin-bottom: 96px; }
   .toppicks-block:last-child { margin-bottom: 0; }
-  .toppicks-header {
-    text-align: center;
-    margin-bottom: 56px;
-  }
+  .toppicks-header { text-align: center; margin-bottom: 56px; }
   .toppicks-header .eyebrow {
     font-size: 13px;
     color: var(--text-secondary);
@@ -309,18 +302,42 @@
     margin-bottom: 22px;
     font-weight: 400;
   }
-  .product-tags .dot {
-    margin: 0 8px;
-    opacity: 0.45;
-  }
+  .product-tags .dot { margin: 0 8px; opacity: 0.45; }
   .product-why {
     font-size: 13.5px;
     color: var(--text-secondary);
     line-height: 1.65;
-    margin-bottom: 28px;
-    flex-grow: 1;
+    margin-bottom: 0;
+    font-style: italic;
   }
+
+  /* New: product detail Q&A block */
+  .product-detail {
+    margin-top: 24px;
+    padding-top: 24px;
+    border-top: 1px solid var(--divider);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .detail-item .detail-label {
+    font-size: 11.5px;
+    font-weight: 500;
+    color: var(--text-tertiary);
+    letter-spacing: 0.05em;
+    margin-bottom: 8px;
+  }
+  .detail-item p {
+    font-size: 13.5px;
+    color: var(--text);
+    line-height: 1.7;
+    font-weight: 400;
+  }
+
   .product-buttons {
+    margin-top: 28px;
+    padding-top: 24px;
+    border-top: 1px solid var(--divider);
     display: flex;
     gap: 10px;
     flex-wrap: wrap;
@@ -387,7 +404,7 @@
   /* Footer */
   footer {
     text-align: center;
-    padding: 80px 0 80px;
+    padding: 80px 0;
     border-top: 1px solid var(--divider);
     font-size: 12.5px;
     color: var(--text-secondary);
@@ -423,10 +440,7 @@
     .product-group-title, .toppicks-header h3 { font-size: 28px; }
     .top-nav-links { gap: 18px; }
     .top-nav-links a { font-size: 12.5px; }
-    .hero-stats {
-      gap: 24px;
-      font-size: 14px;
-    }
+    .hero-stats { gap: 24px; font-size: 14px; }
     .hero-stats .stat-num { font-size: 18px; }
   }
   @media (max-width: 480px) {
@@ -436,11 +450,7 @@
     .top-nav-logo { font-size: 15px; }
     .top-nav-links { gap: 14px; }
     .top-nav-links a { font-size: 12px; }
-    .hero-stats {
-      flex-direction: column;
-      align-items: center;
-      gap: 8px;
-    }
+    .hero-stats { flex-direction: column; align-items: center; gap: 8px; }
     .product-card { padding: 28px 24px; }
     .insight-card { padding: 32px 24px; }
   }
@@ -514,41 +524,11 @@
         <p>有可验证收入、indie 圈讨论度极低、没融资信号、创始人也没公开晒过 ARR。</p>
       </div>
       <div class="toppicks-grid">
-        <div class="pick-card">
-          <div class="rank">01</div>
-          <h4>Cliniko</h4>
-          <div class="pick-country">澳大利亚</div>
-          <p>14 年不融资、2011 年起价格从未上调、65,000+ 医疗专业人士在付费、利润 2% 捐慈善 —— 公开拒绝增长导向。</p>
-          <a class="pick-visit" href="https://www.cliniko.com/" target="_blank" rel="noopener">访问 &rarr;</a>
-        </div>
-        <div class="pick-card">
-          <div class="rank">02</div>
-          <h4>Sejda</h4>
-          <div class="pick-country">荷兰</div>
-          <p>2010 年起持续运营,ARR 和团队规模都刻意不公开,用罕见的 $5 周卡定价吃 Smallpdf 旁边的 SMB 长尾。</p>
-          <a class="pick-visit" href="https://www.sejda.com/" target="_blank" rel="noopener">访问 &rarr;</a>
-        </div>
-        <div class="pick-card">
-          <div class="rank">03</div>
-          <h4>Hiveage</h4>
-          <div class="pick-country">斯里兰卡</div>
-          <p>10+ 年发票工具,Colombo 母公司持续招聘,Wikipedia 收录,零融资,几乎无英文 indie 圈讨论 —— 全球 B2B SaaS 极罕见的非英语区样本。</p>
-          <a class="pick-visit" href="https://www.hiveage.com/" target="_blank" rel="noopener">访问 &rarr;</a>
-        </div>
-        <div class="pick-card">
-          <div class="rank">04</div>
-          <h4>Mailmeteor</h4>
-          <div class="pick-country">法国</div>
-          <p>通过 Google Workspace Marketplace 单一渠道吃下 700 万用户。Paris 1-10 人团队,零融资,讨论度低到 YAMM 比它更出名。</p>
-          <a class="pick-visit" href="https://mailmeteor.com/" target="_blank" rel="noopener">访问 &rarr;</a>
-        </div>
-        <div class="pick-card">
-          <div class="rank">05</div>
-          <h4>APITemplate.io</h4>
-          <div class="pick-country">新加坡</div>
-          <p>新加坡单人创始人 Jacky Tan,Crunchbase 显示零融资,靠 Make / Zapier / n8n 集成做长尾分发,Bannerbear 同赛道却被英文圈忽视。</p>
-          <a class="pick-visit" href="https://apitemplate.io/" target="_blank" rel="noopener">访问 &rarr;</a>
-        </div>
+        <div class="pick-card"><div class="rank">01</div><h4>Cliniko</h4><div class="pick-country">澳大利亚</div><p>14 年不融资、2011 年起价格从未上调、65,000+ 医疗专业人士在付费、利润 2% 捐慈善 —— 公开拒绝增长导向。</p><a class="pick-visit" href="https://www.cliniko.com/" target="_blank" rel="noopener">访问 &rarr;</a></div>
+        <div class="pick-card"><div class="rank">02</div><h4>Sejda</h4><div class="pick-country">荷兰</div><p>2010 年起持续运营,ARR 和团队规模都刻意不公开,用罕见的 $5 周卡定价吃 Smallpdf 旁边的 SMB 长尾。</p><a class="pick-visit" href="https://www.sejda.com/" target="_blank" rel="noopener">访问 &rarr;</a></div>
+        <div class="pick-card"><div class="rank">03</div><h4>Hiveage</h4><div class="pick-country">斯里兰卡</div><p>10+ 年发票工具,Colombo 母公司持续招聘,Wikipedia 收录,零融资,几乎无英文 indie 圈讨论。</p><a class="pick-visit" href="https://www.hiveage.com/" target="_blank" rel="noopener">访问 &rarr;</a></div>
+        <div class="pick-card"><div class="rank">04</div><h4>Mailmeteor</h4><div class="pick-country">法国</div><p>通过 Google Workspace Marketplace 单一渠道吃下 700 万用户。Paris 1-10 人团队,零融资,讨论度低到 YAMM 比它更出名。</p><a class="pick-visit" href="https://mailmeteor.com/" target="_blank" rel="noopener">访问 &rarr;</a></div>
+        <div class="pick-card"><div class="rank">05</div><h4>APITemplate.io</h4><div class="pick-country">新加坡</div><p>新加坡单人创始人,零融资,靠 Make / Zapier / n8n 集成做长尾分发,Bannerbear 同赛道却被英文圈忽视。</p><a class="pick-visit" href="https://apitemplate.io/" target="_blank" rel="noopener">访问 &rarr;</a></div>
       </div>
     </div>
 
@@ -559,41 +539,11 @@
         <p>单人 4 周可做出 MVP,不依赖自研模型,技术栈清晰,有可复刻的渠道路径。</p>
       </div>
       <div class="toppicks-grid">
-        <div class="pick-card">
-          <div class="rank">01</div>
-          <h4>Mailmeteor</h4>
-          <div class="pick-country">法国</div>
-          <p>Apps Script + Gmail API + Sheets。在 Workspace Marketplace 上架即获得分发,本批最干净的"附生大厂渠道"案例。</p>
-          <a class="pick-visit" href="https://mailmeteor.com/" target="_blank" rel="noopener">访问 &rarr;</a>
-        </div>
-        <div class="pick-card">
-          <div class="rank">02</div>
-          <h4>Pirsch Analytics</h4>
-          <div class="pick-country">德国</div>
-          <p>Go 采集 + Postgres / ClickHouse + Stripe,2 人到 $5K MRR。开源 SDK 当开发者获客渠道。</p>
-          <a class="pick-visit" href="https://pirsch.io/" target="_blank" rel="noopener">访问 &rarr;</a>
-        </div>
-        <div class="pick-card">
-          <div class="rank">03</div>
-          <h4>HelpKit</h4>
-          <div class="pick-country">奥地利</div>
-          <p>Notion API + 静态站渲染 + Algolia + Stripe,单人 bootstrap 到 $10K+ MRR。绑大平台的低风险 niche 范式。</p>
-          <a class="pick-visit" href="https://www.helpkit.so/" target="_blank" rel="noopener">访问 &rarr;</a>
-        </div>
-        <div class="pick-card">
-          <div class="rank">04</div>
-          <h4>Paperbell</h4>
-          <div class="pick-country">英国</div>
-          <p>Stripe + 日历 + 电子签 + 邮件。Flat $47.50/月反 per-client 定价模型,连续创业者第二次出手的清晰样本。</p>
-          <a class="pick-visit" href="https://paperbell.com/" target="_blank" rel="noopener">访问 &rarr;</a>
-        </div>
-        <div class="pick-card">
-          <div class="rank">05</div>
-          <h4>APITemplate.io</h4>
-          <div class="pick-country">新加坡</div>
-          <p>Puppeteer + S3 + Stripe。在 Make / Zapier / n8n 上架获客而非自营销,证明"零融资靠集成分发"可行。</p>
-          <a class="pick-visit" href="https://apitemplate.io/" target="_blank" rel="noopener">访问 &rarr;</a>
-        </div>
+        <div class="pick-card"><div class="rank">01</div><h4>Mailmeteor</h4><div class="pick-country">法国</div><p>在 Workspace Marketplace 上架即获得分发,本批最干净的"附生大厂渠道"案例。</p><a class="pick-visit" href="https://mailmeteor.com/" target="_blank" rel="noopener">访问 &rarr;</a></div>
+        <div class="pick-card"><div class="rank">02</div><h4>Pirsch Analytics</h4><div class="pick-country">德国</div><p>Go 采集 + Postgres + Stripe,2 人到 $5K MRR。开源 SDK 当开发者获客渠道。</p><a class="pick-visit" href="https://pirsch.io/" target="_blank" rel="noopener">访问 &rarr;</a></div>
+        <div class="pick-card"><div class="rank">03</div><h4>HelpKit</h4><div class="pick-country">奥地利</div><p>Notion API + 静态站渲染 + Algolia + Stripe,单人 bootstrap 到 $10K+ MRR。绑大平台的低风险 niche 范式。</p><a class="pick-visit" href="https://www.helpkit.so/" target="_blank" rel="noopener">访问 &rarr;</a></div>
+        <div class="pick-card"><div class="rank">04</div><h4>Paperbell</h4><div class="pick-country">英国</div><p>Stripe + 日历 + 电子签 + 邮件。Flat $47.50/月反 per-client 定价。连续创业者第二次出手。</p><a class="pick-visit" href="https://paperbell.com/" target="_blank" rel="noopener">访问 &rarr;</a></div>
+        <div class="pick-card"><div class="rank">05</div><h4>APITemplate.io</h4><div class="pick-country">新加坡</div><p>Puppeteer + S3 + Stripe。在 Make / Zapier / n8n 上架获客而非自营销。</p><a class="pick-visit" href="https://apitemplate.io/" target="_blank" rel="noopener">访问 &rarr;</a></div>
       </div>
     </div>
 
@@ -604,41 +554,11 @@
         <p>每个都代表一种独立的运营哲学或地理样本,值得写一篇 teardown。</p>
       </div>
       <div class="toppicks-grid">
-        <div class="pick-card">
-          <div class="rank">01</div>
-          <h4>Cliniko</h4>
-          <div class="pick-country">澳大利亚</div>
-          <p>"14 年价格不变 + 拒绝融资 + 利润捐慈善"的反增长主义实践 —— SaaS 主流叙事之外完整的反样本。</p>
-          <a class="pick-visit" href="https://www.cliniko.com/" target="_blank" rel="noopener">访问 &rarr;</a>
-        </div>
-        <div class="pick-card">
-          <div class="rank">02</div>
-          <h4>Mailmeteor</h4>
-          <div class="pick-country">法国</div>
-          <p>单一渠道(Google Workspace)极限利用做到 700 万用户,验证"附生大厂分销"的天花板和依赖风险。</p>
-          <a class="pick-visit" href="https://mailmeteor.com/" target="_blank" rel="noopener">访问 &rarr;</a>
-        </div>
-        <div class="pick-card">
-          <div class="rank">03</div>
-          <h4>Outseta</h4>
-          <div class="pick-country">美国</div>
-          <p>三创始人全员 $210K 同薪、transaction 抽成而非席位定价、头 3 年才到 $1.5K MRR 仍坚持 —— 罕见的长期主义运营哲学。</p>
-          <a class="pick-visit" href="https://www.outseta.com/" target="_blank" rel="noopener">访问 &rarr;</a>
-        </div>
-        <div class="pick-card">
-          <div class="rank">04</div>
-          <h4>Oopy</h4>
-          <div class="pick-country">韩国</div>
-          <p>几乎零英文报道、$6 起的极低价、深耕韩文 SEO —— "亚洲市场 Notion 周边"完整对照。</p>
-          <a class="pick-visit" href="https://www.oopy.io/en" target="_blank" rel="noopener">访问 &rarr;</a>
-        </div>
-        <div class="pick-card">
-          <div class="rank">05</div>
-          <h4>Snov.io</h4>
-          <div class="pick-country">乌克兰</div>
-          <p>战时乌克兰团队 0 融资跑到 $22.7M ARR —— "非西方 + 完全 bootstrap + 危机环境"三重叠加的稀有路径。</p>
-          <a class="pick-visit" href="https://snov.io/" target="_blank" rel="noopener">访问 &rarr;</a>
-        </div>
+        <div class="pick-card"><div class="rank">01</div><h4>Cliniko</h4><div class="pick-country">澳大利亚</div><p>"14 年价格不变 + 拒绝融资 + 利润捐慈善"的反增长主义实践 —— SaaS 主流叙事之外完整的反样本。</p><a class="pick-visit" href="https://www.cliniko.com/" target="_blank" rel="noopener">访问 &rarr;</a></div>
+        <div class="pick-card"><div class="rank">02</div><h4>Mailmeteor</h4><div class="pick-country">法国</div><p>单一渠道(Google Workspace)极限利用做到 700 万用户,验证"附生大厂分销"的天花板和依赖风险。</p><a class="pick-visit" href="https://mailmeteor.com/" target="_blank" rel="noopener">访问 &rarr;</a></div>
+        <div class="pick-card"><div class="rank">03</div><h4>Outseta</h4><div class="pick-country">美国</div><p>三创始人全员 $210K 同薪、transaction 抽成而非席位定价、头 3 年才到 $1.5K MRR 仍坚持。</p><a class="pick-visit" href="https://www.outseta.com/" target="_blank" rel="noopener">访问 &rarr;</a></div>
+        <div class="pick-card"><div class="rank">04</div><h4>Oopy</h4><div class="pick-country">韩国</div><p>几乎零英文报道、$6 起的极低价、深耕韩文 SEO —— "亚洲市场 Notion 周边"完整对照。</p><a class="pick-visit" href="https://www.oopy.io/en" target="_blank" rel="noopener">访问 &rarr;</a></div>
+        <div class="pick-card"><div class="rank">05</div><h4>Snov.io</h4><div class="pick-country">乌克兰</div><p>战时乌克兰团队 0 融资跑到 $22.7M ARR —— "非西方 + 完全 bootstrap + 危机环境"三重叠加的稀有路径。</p><a class="pick-visit" href="https://snov.io/" target="_blank" rel="noopener">访问 &rarr;</a></div>
       </div>
     </div>
   </div>
@@ -647,7 +567,7 @@
 <section id="all-products">
   <div class="container">
     <h2 class="section-title">全部 30 个产品</h2>
-    <p class="section-subtitle">按 batch 分组 —— 每个 batch 覆盖一组不同的类别。</p>
+    <p class="section-subtitle">每个产品都附"产品做什么、谁付钱、技术怎么实现、小团队怎么抄"的白话拆解。</p>
 
     <div class="product-group">
       <div class="product-group-header">
@@ -661,7 +581,14 @@
           <div class="product-name">Whalesync</div>
           <div class="product-oneliner">Notion / Airtable / Webflow 等之间的双向数据同步。</div>
           <div class="product-tags">Notion / Airtable<span class="dot">&middot;</span>subscription<span class="dot">&middot;</span>美国</div>
-          <div class="product-why">把 "no-code 工具间的胶水" 做成独立付费产品。$39/月起就有人愿意为这个胶水付费,曾经是大家用 Zapier 凑合的活。</div>
+          <div class="product-why">把 "no-code 工具间的胶水" 做成独立付费产品。$39/月起就有人愿意为这个胶水付费。</div>
+          <div class="product-detail">
+            <div class="detail-item"><div class="detail-label">解决什么问题</div><p>你公司用 Notion 写 wiki、用 Airtable 存数据、网站在 Webflow 上,三个工具的数据各管各的,要手动复制粘贴,慢且容易错。</p></div>
+            <div class="detail-item"><div class="detail-label">用户是谁</div><p>用 no-code 工具搭网站和内部流程的小公司、做客户网站的 agencies、营销团队。</p></div>
+            <div class="detail-item"><div class="detail-label">为什么付费</div><p>"双向、实时、不丢数据"的同步看似简单,自己写代码维护要花一个工程师的工资。$39/月比这便宜。</p></div>
+            <div class="detail-item"><div class="detail-label">技术原理</div><p>在你的几个账号之间架了一座"中转桥" —— 一边变,另一边自动跟着变。靠的是这几家工具开放的官方接口(API),零 AI。</p></div>
+            <div class="detail-item"><div class="detail-label">小团队怎么抄</div><p>挑两个具体工具(比如 Notion ↔ Airtable),用 Node.js 写定时拉取程序。前 4 周做单向同步,后 4 周处理"两边同时改怎么办"的冲突。</p></div>
+          </div>
           <div class="product-buttons">
             <a class="btn" href="https://www.whalesync.com/" target="_blank" rel="noopener">官网 &nearr;</a>
             <a class="btn" href="https://www.whalesync.com/pricing" target="_blank" rel="noopener">定价 &nearr;</a>
@@ -672,7 +599,14 @@
           <div class="product-name">Oopy</div>
           <div class="product-oneliner">把 Notion 页面变成带自定义域名的网站。</div>
           <div class="product-tags">Notion / Airtable<span class="dot">&middot;</span>subscription<span class="dot">&middot;</span>韩国</div>
-          <div class="product-why">$6/月起的极低价 + 锁死韩国本地市场 —— 教科书级的非英语区独立产品本地化打法。Super.so 已被讨论烂,Oopy 几乎零英文报道。</div>
+          <div class="product-why">$6/月起的极低价 + 锁死韩国本地市场 —— 教科书级的非英语区独立产品本地化打法。</div>
+          <div class="product-detail">
+            <div class="detail-item"><div class="detail-label">解决什么问题</div><p>你用 Notion 写好了内容想发布成正式网站,但 Notion 自带的发布功能很丑、不能绑自己的域名、SEO 差。</p></div>
+            <div class="detail-item"><div class="detail-label">用户是谁</div><p>韩国本地的内容创作者、小公司、博客作者、想要简单官网的个体户。</p></div>
+            <div class="detail-item"><div class="detail-label">为什么付费</div><p>$6/月就能拥有一个用 Notion 编辑、看起来专业的正式网站。比从零做网站快 10 倍、便宜 100 倍。</p></div>
+            <div class="detail-item"><div class="detail-label">技术原理</div><p>读你 Notion 页面的内容,在自己服务器上重新画成漂亮网页,顺便帮你绑上买的域名和 SSL 证书。完全没有 AI。</p></div>
+            <div class="detail-item"><div class="detail-label">小团队怎么抄</div><p>用 Notion 官方接口抓内容 + 用 Next.js 渲染成静态页 + 接 Cloudflare 域名绑定。单人 3-4 周可跑通。难点是把 Notion 复杂排版准确还原。</p></div>
+          </div>
           <div class="product-buttons">
             <a class="btn" href="https://www.oopy.io/en" target="_blank" rel="noopener">官网 &nearr;</a>
             <a class="btn" href="https://www.oopy.us/en/pricing" target="_blank" rel="noopener">定价 &nearr;</a>
@@ -683,7 +617,14 @@
           <div class="product-name">TablePlus</div>
           <div class="product-oneliner">原生 macOS / Windows 多数据库 GUI 客户端。</div>
           <div class="product-tags">开发者工具<span class="dot">&middot;</span>license<span class="dot">&middot;</span>越南</div>
-          <div class="product-why">Sequel Pro / Postico 被收购或停更后,TablePlus 用一次性 $99 license + 一年更新拿下整个空缺市场。反 SaaS 主流的定价形态。</div>
+          <div class="product-why">Sequel Pro / Postico 被收购或停更后,TablePlus 用一次性 $99 license + 一年更新拿下整个空缺市场。</div>
+          <div class="product-detail">
+            <div class="detail-item"><div class="detail-label">解决什么问题</div><p>开发者每天要操作 MySQL、PostgreSQL 等十几种数据库,每种都有自己丑陋的命令行,切换累。</p></div>
+            <div class="detail-item"><div class="detail-label">用户是谁</div><p>全球后端开发者、DBA(数据库管理员)、运维工程师。</p></div>
+            <div class="detail-item"><div class="detail-label">为什么付费</div><p>每天省鼠标时间。一次性付 $99 比每月续费心理负担小,界面比对手好看 10 倍。</p></div>
+            <div class="detail-item"><div class="detail-label">技术原理</div><p>用 Mac/Windows 原生编程语言写的桌面 App,内部封装了每种数据库的官方驱动,把它们的丑陋界面统一翻译成同一种漂亮界面。</p></div>
+            <div class="detail-item"><div class="detail-label">小团队怎么抄</div><p>这不是 4 周能抄的活。要写原生桌面 App + 兼容 10 多种数据库 + 处理大表性能,半年起步。开发者市场已经卷,新进入者要找新切口(比如"专给 AI 工程师用的向量数据库 GUI")。</p></div>
+          </div>
           <div class="product-buttons">
             <a class="btn" href="https://tableplus.com/" target="_blank" rel="noopener">官网 &nearr;</a>
             <a class="btn" href="https://tableplus.com/pricing" target="_blank" rel="noopener">定价 &nearr;</a>
@@ -695,6 +636,13 @@
           <div class="product-oneliner">用 Airtable 数据一键生成内部工具和客户门户。</div>
           <div class="product-tags">Notion / Airtable<span class="dot">&middot;</span>freemium<span class="dot">&middot;</span>爱尔兰</div>
           <div class="product-why">Softr / Stacker 占据讨论度,Noloco 用"按 active user 计价 + 客户访客免费"的不同打法在 agencies 市场默默拿单。</div>
+          <div class="product-detail">
+            <div class="detail-item"><div class="detail-label">解决什么问题</div><p>公司用 Airtable 存了一堆客户数据,想给客户做一个"看自己进度"的门户,但自己开发要 3 个月。</p></div>
+            <div class="detail-item"><div class="detail-label">用户是谁</div><p>做客户项目的设计/咨询 agency、用 Airtable 当数据库的中小公司运营负责人。</p></div>
+            <div class="detail-item"><div class="detail-label">为什么付费</div><p>有了它,2 小时就能搭一个客户门户。比雇前端工程师便宜 100 倍。</p></div>
+            <div class="detail-item"><div class="detail-label">技术原理</div><p>连到你的 Airtable → 看你有什么字段(姓名、邮箱、订单状态)→ 自动生成对应的网页表单和列表 → 加上登录权限控制。</p></div>
+            <div class="detail-item"><div class="detail-label">小团队怎么抄</div><p>Airtable 接口 + React + 登录鉴权 + Stripe 计费。MVP 需要 6-8 周。难点是让"非程序员能拖拽配置"。</p></div>
+          </div>
           <div class="product-buttons">
             <a class="btn" href="https://noloco.io/" target="_blank" rel="noopener">官网 &nearr;</a>
             <a class="btn" href="https://noloco.io/pricing" target="_blank" rel="noopener">定价 &nearr;</a>
@@ -705,7 +653,14 @@
           <div class="product-name">HelpKit</div>
           <div class="product-oneliner">把 Notion 文档变成专业 help center / docs 站。</div>
           <div class="product-tags">Notion / Airtable<span class="dot">&middot;</span>subscription<span class="dot">&middot;</span>奥地利</div>
-          <div class="product-why">单人 bootstrapped 做到 $10K+ MRR,达到后因被抄袭 landing page 而停止公开数字。展示了 Notion 周边的天花板和速度。</div>
+          <div class="product-why">单人 bootstrapped 做到 $10K+ MRR,达到后因被抄袭 landing page 而停止公开数字。</div>
+          <div class="product-detail">
+            <div class="detail-item"><div class="detail-label">解决什么问题</div><p>你的 SaaS 公司用 Notion 写产品文档,但 Notion 没搜索、URL 难看、不能直接给客户看。</p></div>
+            <div class="detail-item"><div class="detail-label">用户是谁</div><p>已经用 Notion 写文档的独立开发者、小 SaaS 团队、教育产品。</p></div>
+            <div class="detail-item"><div class="detail-label">为什么付费</div><p>$15/月就能把内部 Notion 变成专业的帮助中心,带搜索、自定义域名、嵌入到 App 里的对话气泡。</p></div>
+            <div class="detail-item"><div class="detail-label">技术原理</div><p>抓 Notion 内容 → 重新画成搜索友好的静态网页 → 加上搜索引擎 → 给你一个可以嵌入到自己网站的小气泡。</p></div>
+            <div class="detail-item"><div class="detail-label">小团队怎么抄</div><p>单人 3-4 周能做出 MVP。关键不是技术,是"找到大量已经用 Notion 又痛的人"。HelpKit 创始人就是自己用 Notion 然后做出来卖给同类人。</p></div>
+          </div>
           <div class="product-buttons">
             <a class="btn" href="https://www.helpkit.so/" target="_blank" rel="noopener">官网 &nearr;</a>
             <a class="btn" href="https://www.helpkit.so/pricing" target="_blank" rel="noopener">定价 &nearr;</a>
@@ -716,7 +671,14 @@
           <div class="product-name">Text Blaze</div>
           <div class="product-oneliner">Chrome 中插入带逻辑 / 表单 / 动态字段的文本模板。</div>
           <div class="product-tags">Chrome 插件<span class="dot">&middot;</span>freemium<span class="dot">&middot;</span>美国</div>
-          <div class="product-why">$2.99/月的破坏性低价碾压 TextExpander。70 万 Chrome 用户、4.9 星 —— 插件赛道用价格 + 模板 DSL 双重差异化的样本。</div>
+          <div class="product-why">$2.99/月的破坏性低价碾压 TextExpander。70 万 Chrome 用户、4.9 星。</div>
+          <div class="product-detail">
+            <div class="detail-item"><div class="detail-label">解决什么问题</div><p>你做销售、客服或招聘,每天要打无数遍重复的话(欢迎语、报价模板、面试问题)。打字累、还容易写错。</p></div>
+            <div class="detail-item"><div class="detail-label">用户是谁</div><p>销售、客服、招聘官、医生、律师 —— 任何一天打字超过 4 小时的人。</p></div>
+            <div class="detail-item"><div class="detail-label">为什么付费</div><p>输入 /hi 自动展开成完整问候语。每天能省 30 分钟。$2.99/月不算钱。</p></div>
+            <div class="detail-item"><div class="detail-label">技术原理</div><p>Chrome 插件偷偷监听你打字,识别快捷符号后替换成预设模板,支持插入日期、变量、表单。模板存在云端,所有电脑同步。</p></div>
+            <div class="detail-item"><div class="detail-label">小团队怎么抄</div><p>Chrome 插件 API + 云端模板存储 + Stripe 订阅。4-6 周。难点是"用户为什么选你而不是免费工具" —— Text Blaze 的答案是低价 + 模板里能写逻辑(if/else)。</p></div>
+          </div>
           <div class="product-buttons">
             <a class="btn" href="https://blaze.today/" target="_blank" rel="noopener">官网 &nearr;</a>
             <a class="btn" href="https://blaze.today/pricing/" target="_blank" rel="noopener">定价 &nearr;</a>
@@ -728,6 +690,13 @@
           <div class="product-oneliner">在 Gmail 里做大批量个性化邮件群发和回复管理。</div>
           <div class="product-tags">微型 SaaS<span class="dot">&middot;</span>freemium<span class="dot">&middot;</span>法国</div>
           <div class="product-why">靠 Google Workspace Marketplace 这一个分发渠道 + 零融资做到 700 万用户。本批最干净的"附生大厂渠道"打法。</div>
+          <div class="product-detail">
+            <div class="detail-item"><div class="detail-label">解决什么问题</div><p>老师想给 100 个学生家长群发个性化邮件、销售想给 50 个客户群发跟进。Gmail 本身不能做"每封换名字、换公司"的批量发送。</p></div>
+            <div class="detail-item"><div class="detail-label">用户是谁</div><p>学校老师、NGO、销售员、小公司营销负责人 —— 不需要专业邮件营销工具的轻度用户。</p></div>
+            <div class="detail-item"><div class="detail-label">为什么付费</div><p>免费版每天 50 封,$12.99/月每天 500 封 —— 比 MailChimp 便宜 10 倍,而且就在 Gmail 里用,不用切工具。</p></div>
+            <div class="detail-item"><div class="detail-label">技术原理</div><p>它是 Gmail 官方插件,通过 Google 给开发者开放的接口,用你自己的 Gmail 账号一封一封发(这样不会被当垃圾邮件)。</p></div>
+            <div class="detail-item"><div class="detail-label">小团队怎么抄</div><p>这条赛道的"渠道"已经被 Mailmeteor 锁死 —— 它在 Google 应用市场榜单第一。新人很难抢,除非做更窄的细分(比如"专给医生用的"、"专给学校用的")。</p></div>
+          </div>
           <div class="product-buttons">
             <a class="btn" href="https://mailmeteor.com/" target="_blank" rel="noopener">官网 &nearr;</a>
             <a class="btn" href="https://mailmeteor.com/pricing" target="_blank" rel="noopener">定价 &nearr;</a>
@@ -738,7 +707,14 @@
           <div class="product-name">APITemplate.io</div>
           <div class="product-oneliner">用可复用模板自动生成 PDF / 社交图的 API。</div>
           <div class="product-tags">开发者工具<span class="dot">&middot;</span>freemium<span class="dot">&middot;</span>新加坡</div>
-          <div class="product-why">Bannerbear 同赛道、新加坡独立创始人、零融资,走 Make / Zapier / n8n 集成的分发路径而非自营销 —— 一个完整的对照样本。</div>
+          <div class="product-why">Bannerbear 同赛道、新加坡独立创始人、零融资,走 Make / Zapier / n8n 集成的分发路径而非自营销。</div>
+          <div class="product-detail">
+            <div class="detail-item"><div class="detail-label">解决什么问题</div><p>你要批量给客户发 PDF 发票、给社交媒体生成带数据的封面图。手动用 Photoshop 拼一万张图不现实。</p></div>
+            <div class="detail-item"><div class="detail-label">用户是谁</div><p>做自动化流程的小工具公司、写脚本的运营人员、no-code 工具用户。</p></div>
+            <div class="detail-item"><div class="detail-label">为什么付费</div><p>你给它一个模板 + 一份数据,它给你一个 PDF 或 PNG。$29/月生成 1200 张,比雇设计师便宜。</p></div>
+            <div class="detail-item"><div class="detail-label">技术原理</div><p>后台跑一个没有界面的浏览器(Headless Chrome),把你的模板渲染成网页,然后截图或导出 PDF 返回给你。</p></div>
+            <div class="detail-item"><div class="detail-label">小团队怎么抄</div><p>Puppeteer(浏览器自动化库)+ Express 服务器 + S3 存储 + Stripe。4 周可跑通。关键是上架到 Zapier / Make / n8n 集成市场获客,不要烧广告。</p></div>
+          </div>
           <div class="product-buttons">
             <a class="btn" href="https://apitemplate.io/" target="_blank" rel="noopener">官网 &nearr;</a>
             <a class="btn" href="https://apitemplate.io/pricing/" target="_blank" rel="noopener">定价 &nearr;</a>
@@ -749,7 +725,14 @@
           <div class="product-name">DebugBear</div>
           <div class="product-oneliner">网站性能 + Core Web Vitals 持续监控。</div>
           <div class="product-tags">开发者工具<span class="dot">&middot;</span>subscription<span class="dot">&middot;</span>英国</div>
-          <div class="product-why">纯靠 SEO 内容获客(Core Web Vitals 关键词)+ 单人公司对打 SpeedCurve / Calibre 等基金支持的对手。$49/月起。</div>
+          <div class="product-why">纯靠 SEO 内容获客(Core Web Vitals 关键词)+ 单人公司对打 SpeedCurve / Calibre 等基金支持的对手。</div>
+          <div class="product-detail">
+            <div class="detail-item"><div class="detail-label">解决什么问题</div><p>你的网站打开变慢了,谷歌排名会掉。但你不知道哪里慢、什么时候慢的。</p></div>
+            <div class="detail-item"><div class="detail-label">用户是谁</div><p>在意 SEO 排名的电商、媒体网站、SaaS 公司,以及给客户做网站优化的 SEO 顾问。</p></div>
+            <div class="detail-item"><div class="detail-label">为什么付费</div><p>$49/月帮你 24/7 监控网站速度,出问题时报警,告诉你"是图片太大还是脚本加载慢"。</p></div>
+            <div class="detail-item"><div class="detail-label">技术原理</div><p>在世界各地的服务器上,每隔一段时间用 Google 自己的免费测速工具(Lighthouse)跑你的网站,记录每次结果画成趋势图。</p></div>
+            <div class="detail-item"><div class="detail-label">小团队怎么抄</div><p>Lighthouse(开源免费)+ 调度系统 + 时序数据库 + 图表前端 + Stripe。8 周左右。关键不是技术,是写 SEO 内容(比如"如何降低 LCP")让用户搜过来 —— 单人公司能跑赢竞品的真正原因。</p></div>
+          </div>
           <div class="product-buttons">
             <a class="btn" href="https://www.debugbear.com/" target="_blank" rel="noopener">官网 &nearr;</a>
             <a class="btn" href="https://www.debugbear.com/pricing" target="_blank" rel="noopener">定价 &nearr;</a>
@@ -761,6 +744,13 @@
           <div class="product-oneliner">GDPR 友好、cookie-free 的 Google Analytics 替代。</div>
           <div class="product-tags">微型 SaaS<span class="dot">&middot;</span>subscription<span class="dot">&middot;</span>德国</div>
           <div class="product-why">Plausible / Fathom 已是基金支持的明星,但 Pirsch 用德国本土合规 + 2 人团队 + $6/月低价依然能跑通到 $5K MRR。</div>
+          <div class="product-detail">
+            <div class="detail-item"><div class="detail-label">解决什么问题</div><p>你想知道每天有多少人访问网站,但 Google Analytics 太复杂、还要 cookie 同意横幅、欧洲合规很麻烦。</p></div>
+            <div class="detail-item"><div class="detail-label">用户是谁</div><p>欧洲博主、独立开发者、做 GDPR 合规的小公司。</p></div>
+            <div class="detail-item"><div class="detail-label">为什么付费</div><p>$6/月就能拥有一个 cookie-free、欧洲服务器、GDPR 合规的网站分析。不用再放那个烦人的同意横幅。</p></div>
+            <div class="detail-item"><div class="detail-label">技术原理</div><p>在你网站嵌入一小段 JS 脚本,记录访问的国家、设备、停留时间(但不识别个人),数据存在德国服务器。</p></div>
+            <div class="detail-item"><div class="detail-label">小团队怎么抄</div><p>Go 写采集后端 + Postgres 或 ClickHouse 存数据 + 前端画图表 + Stripe。6-8 周。关键是开源你的采集 SDK,让开发者口口相传。</p></div>
+          </div>
           <div class="product-buttons">
             <a class="btn" href="https://pirsch.io/" target="_blank" rel="noopener">官网 &nearr;</a>
             <a class="btn" href="https://pirsch.io/pricing" target="_blank" rel="noopener">定价 &nearr;</a>
@@ -782,7 +772,14 @@
           <div class="product-name">Tella</div>
           <div class="product-oneliner">浏览器内做有品牌感的产品演示录屏。</div>
           <div class="product-tags">创作者工具<span class="dot">&middot;</span>subscription<span class="dot">&middot;</span>荷兰</div>
-          <div class="product-why">Loom 被 Atlassian 收购后,Tella 用 "browser-first + 自带品牌包装" 的极小团队差异化打法存活。6 人 Amsterdam 团队。</div>
+          <div class="product-why">Loom 被 Atlassian 收购后,Tella 用 "browser-first + 自带品牌包装" 的极小团队差异化打法存活。</div>
+          <div class="product-detail">
+            <div class="detail-item"><div class="detail-label">解决什么问题</div><p>Loom 被收购后变贵了、录的视频还不能直接美化(没有边距、没有放大镜、不能加品牌)。</p></div>
+            <div class="detail-item"><div class="detail-label">用户是谁</div><p>需要给客户/同事发演示视频的产品经理、销售、创始人。</p></div>
+            <div class="detail-item"><div class="detail-label">为什么付费</div><p>Tella 录完视频自动加圆角边距、模糊背景、品牌色边框 —— 不用专业剪辑软件也能做出像样的演示。$15/月。</p></div>
+            <div class="detail-item"><div class="detail-label">技术原理</div><p>用浏览器自带的录屏功能录画面 → 上传到云端 → 在浏览器里实时合成美化效果(边距、放大、品牌色)。</p></div>
+            <div class="detail-item"><div class="detail-label">小团队怎么抄</div><p>WebRTC(浏览器实时通讯)+ Canvas 画图 + ffmpeg.wasm 视频处理 + 云存储 + Stripe。8 周。难点是让"录完即美"这一步流畅 —— 不能让用户等渲染。</p></div>
+          </div>
           <div class="product-buttons">
             <a class="btn" href="https://www.tella.com/" target="_blank" rel="noopener">官网 &nearr;</a>
             <a class="btn" href="https://www.tella.com/pricing" target="_blank" rel="noopener">定价 &nearr;</a>
@@ -794,6 +791,13 @@
           <div class="product-oneliner">macOS 屏幕录制,自动加放大和平滑过渡。</div>
           <div class="product-tags">创作者工具<span class="dot">&middot;</span>subscription<span class="dot">&middot;</span>波兰</div>
           <div class="product-why">波兰单人 sole proprietorship 在 9 个月内做到 8,000 付费客户。和浏览器派完全相反 —— 重投资 macOS 原生 + 高端定位。</div>
+          <div class="product-detail">
+            <div class="detail-item"><div class="detail-label">解决什么问题</div><p>别的录屏工具录出来一帧一帧死板。开发者要录代码演示,需要更精致的工具(自动跟随鼠标放大、平滑过渡)。</p></div>
+            <div class="detail-item"><div class="detail-label">用户是谁</div><p>开发者、做产品教程的创作者、苹果生态用户、做 SaaS 演示视频的创业者。</p></div>
+            <div class="detail-item"><div class="detail-label">为什么付费</div><p>Screen Studio 录完会自动加入"鼠标到哪里画面就跟到哪里"的动效,看起来像专业广告片。$108/年。</p></div>
+            <div class="detail-item"><div class="detail-label">技术原理</div><p>Mac 原生 App,直接调用苹果的录屏接口(ScreenCaptureKit)+ 用显卡(GPU)实时合成"鼠标到哪画面就跟到哪"的动效。完全是 Mac 原生应用,不依赖云端。</p></div>
+            <div class="detail-item"><div class="detail-label">小团队怎么抄</div><p>Swift + Metal(苹果的显卡接口)+ ScreenCaptureKit + Lemon Squeezy 收费。技术门槛高,3 个月起步。波兰单人 Adam 9 个月做到 8000 客户,说明高端定位是可行的。</p></div>
+          </div>
           <div class="product-buttons">
             <a class="btn" href="https://screen.studio/" target="_blank" rel="noopener">官网 &nearr;</a>
             <a class="btn" href="https://screen.studio/#pricing" target="_blank" rel="noopener">定价 &nearr;</a>
@@ -805,6 +809,13 @@
           <div class="product-oneliner">AI 自动去除播客的 filler 词、噪音、长停顿。</div>
           <div class="product-tags">音频处理<span class="dot">&middot;</span>subscription<span class="dot">&middot;</span>罗马尼亚</div>
           <div class="product-why">Bucharest 单人 solo founder,零广告投放,纯 SaaS SEO 拉新做到 300% MRR 增长 —— 在 Krisp / Adobe Podcast 同赛道闷声前进。</div>
+          <div class="product-detail">
+            <div class="detail-item"><div class="detail-label">解决什么问题</div><p>你录了个播客,里面有"嗯"、"啊"、"呃"和咳嗽声。手工剪要几小时,专业工具又贵。</p></div>
+            <div class="detail-item"><div class="detail-label">用户是谁</div><p>独立播客主、YouTuber、声音创作者、独立小型录音工作室。</p></div>
+            <div class="detail-item"><div class="detail-label">为什么付费</div><p>$25/月帮你自动剪掉所有 filler 词。比 Krisp 等竞品便宜,质量相当。</p></div>
+            <div class="detail-item"><div class="detail-label">技术原理</div><p>把你的音频丢给"语音转文字"工具(Whisper),把"嗯啊"识别出来 → 找到对应的音频段 → 直接删掉 + 平滑过渡。</p></div>
+            <div class="detail-item"><div class="detail-label">小团队怎么抄</div><p>Whisper(OpenAI 的开源语音识别)+ ffmpeg 音频处理 + 自训练小模型识别 filler + 网页前端 + Stripe。6-8 周。难点是处理多人对话、不同语言。</p></div>
+          </div>
           <div class="product-buttons">
             <a class="btn" href="https://cleanvoice.ai/" target="_blank" rel="noopener">官网 &nearr;</a>
             <a class="btn" href="https://cleanvoice.ai/pricing/" target="_blank" rel="noopener">定价 &nearr;</a>
@@ -815,7 +826,14 @@
           <div class="product-name">Sejda</div>
           <div class="product-oneliner">在线 + 桌面 PDF 编辑 / 合并 / 拆分 / 表单工具集。</div>
           <div class="product-tags">PDF / 文档<span class="dot">&middot;</span>subscription<span class="dot">&middot;</span>荷兰</div>
-          <div class="product-why">刻意低调 14 年、ARR 和团队规模从未公开、$5 周卡 / $7.5 月这种反 SaaS 主流的灵活定价,稳吃 Smallpdf 旁边的长尾。</div>
+          <div class="product-why">刻意低调 14 年、ARR 和团队规模从未公开、$5 周卡 / $7.5 月这种反 SaaS 主流的灵活定价。</div>
+          <div class="product-detail">
+            <div class="detail-item"><div class="detail-label">解决什么问题</div><p>行政、律师、HR 经常要合并/拆分/编辑 PDF。Adobe Acrobat 太贵($240/年),免费工具有水印或限制。</p></div>
+            <div class="detail-item"><div class="detail-label">用户是谁</div><p>律师、教师、行政、小公司财务 —— 偶尔需要处理 PDF 但用不上 Adobe 的人。</p></div>
+            <div class="detail-item"><div class="detail-label">为什么付费</div><p>$5 买一周用 + $7.5 一个月 —— 比 Adobe 便宜 30 倍,适合"我就这周用"的场景。</p></div>
+            <div class="detail-item"><div class="detail-label">技术原理</div><p>用开源 PDF 处理库(PDFBox 或 iText,免费)做基础操作,加上自家写的网页编辑界面。</p></div>
+            <div class="detail-item"><div class="detail-label">小团队怎么抄</div><p>这个领域很卷(Smallpdf、iLovePDF、Sejda 都在),技术不难但获客难。新人除非做超细分(比如"专给德国税务的 PDF 工具"),否则很难突围。</p></div>
+          </div>
           <div class="product-buttons">
             <a class="btn" href="https://www.sejda.com/" target="_blank" rel="noopener">官网 &nearr;</a>
             <a class="btn" href="https://www.sejda.com/upgrade" target="_blank" rel="noopener">定价 &nearr;</a>
@@ -826,7 +844,14 @@
           <div class="product-name">DocSpring</div>
           <div class="product-oneliner">POST JSON、GET PDF:PDF 表单填充 + 生成 API。</div>
           <div class="product-tags">PDF / 文档<span class="dot">&middot;</span>subscription<span class="dot">&middot;</span>新西兰</div>
-          <div class="product-why">Auckland 单人独立开发者从"自己签证表单填不完"的具体痛点起步,十几年持续作为开发者 API 卖到现在。$49 起。</div>
+          <div class="product-why">Auckland 单人独立开发者从"自己签证表单填不完"的具体痛点起步,十几年持续作为开发者 API 卖到现在。</div>
+          <div class="product-detail">
+            <div class="detail-item"><div class="detail-label">解决什么问题</div><p>你的 SaaS 系统每月要给客户生成填好数据的 PDF 表单(保险申请、签证、合同),手工填一万份不可能。</p></div>
+            <div class="detail-item"><div class="detail-label">用户是谁</div><p>后端开发者,在自己的 App 里需要"自动生成填好数据的 PDF"。</p></div>
+            <div class="detail-item"><div class="detail-label">为什么付费</div><p>$49/月把"上传 PDF 模板 + 发数据 → 拿到填好的 PDF"做成 1 行代码。比自己处理 PDF 库省 1-2 周开发时间。</p></div>
+            <div class="detail-item"><div class="detail-label">技术原理</div><p>你上传一个 PDF 表单 → 系统识别表单字段的坐标位置 → 你发数据过来,它在那些位置填上文字 → 生成新 PDF 返回。</p></div>
+            <div class="detail-item"><div class="detail-label">小团队怎么抄</div><p>Rails/Node + pdftk(开源 PDF 工具)+ S3 存储 + Stripe。6-8 周。新西兰单人 Nathan 一个人维护多年。难点是 PDF 表单格式千奇百怪,边缘案例多。</p></div>
+          </div>
           <div class="product-buttons">
             <a class="btn" href="https://docspring.com/" target="_blank" rel="noopener">官网 &nearr;</a>
             <a class="btn" href="https://docspring.com/pricing" target="_blank" rel="noopener">定价 &nearr;</a>
@@ -837,7 +862,14 @@
           <div class="product-name">Kickresume</div>
           <div class="product-oneliner">简历 / cover letter / 个人网站三合一模板与 AI 生成。</div>
           <div class="product-tags">简历生成<span class="dot">&middot;</span>freemium<span class="dot">&middot;</span>斯洛伐克</div>
-          <div class="product-why">Latka 公开数据 2024 $1.9M ARR / 8K 客户,在英文 indie 圈讨论度被 Resume.io / Enhancv 等远远甩开。</div>
+          <div class="product-why">Latka 公开数据 2024 $1.9M ARR / 8K 客户,在英文 indie 圈讨论度被 Resume.io / Enhancv 远远甩开。</div>
+          <div class="product-detail">
+            <div class="detail-item"><div class="detail-label">解决什么问题</div><p>求职者要做漂亮简历,但 Word 里调格式费劲、自带模板土。</p></div>
+            <div class="detail-item"><div class="detail-label">用户是谁</div><p>求职者(尤其欧美应届生、转行人士、被裁员的白领)。</p></div>
+            <div class="detail-item"><div class="detail-label">为什么付费</div><p>$15/月用专业模板 + AI 帮你写工作经历描述。比雇简历顾问($200+)便宜得多。</p></div>
+            <div class="detail-item"><div class="detail-label">技术原理</div><p>套预设模板 + 调用 OpenAI 接口让 GPT 生成描述文字 + 导出 PDF。技术非常简单。</p></div>
+            <div class="detail-item"><div class="detail-label">小团队怎么抄</div><p>OpenAI 接口 + 模板渲染 + PDF 输出 + Stripe。3-4 周可做出 MVP。但赛道极其卷(Resume.io、Enhancv、Zety),关键是 SEO 排名 + Google 广告投放,普通独立开发者烧不起。</p></div>
+          </div>
           <div class="product-buttons">
             <a class="btn" href="https://www.kickresume.com/" target="_blank" rel="noopener">官网 &nearr;</a>
             <a class="btn" href="https://www.kickresume.com/en/pricing/" target="_blank" rel="noopener">定价 &nearr;</a>
@@ -848,7 +880,14 @@
           <div class="product-name">Hiveage</div>
           <div class="product-oneliner">面向自由职业者和小公司的发票 + 计时 + 账单。</div>
           <div class="product-tags">发票生成<span class="dot">&middot;</span>freemium<span class="dot">&middot;</span>斯里兰卡</div>
-          <div class="product-why">Colombo 出品、10+ 年存活、零融资、Wikipedia 收录但英文 indie 圈零讨论。Sri Lanka 全球 B2B SaaS 的稀有样本。</div>
+          <div class="product-why">Colombo 出品、10+ 年存活、零融资、Wikipedia 收录但英文 indie 圈零讨论。</div>
+          <div class="product-detail">
+            <div class="detail-item"><div class="detail-label">解决什么问题</div><p>自由职业者要给客户开发票,Excel 太丑、FreshBooks($17/月)太贵。</p></div>
+            <div class="detail-item"><div class="detail-label">用户是谁</div><p>自由职业者、咨询师、小型 agencies、设计师、独立开发者。</p></div>
+            <div class="detail-item"><div class="detail-label">为什么付费</div><p>$29.95/月就能管发票 + 计时 + 客户档案 + 报表。比 FreshBooks 便宜一半。</p></div>
+            <div class="detail-item"><div class="detail-label">技术原理</div><p>就是一个普通的网页应用 —— 增删改查客户、生成发票 PDF、接 Stripe/PayPal 收钱。完全没有 AI。</p></div>
+            <div class="detail-item"><div class="detail-label">小团队怎么抄</div><p>Rails/Node + Postgres + Stripe + PayPal + 邮件发送。4 周。但赛道极其拥挤,Wave、FreshBooks、Bonsai 都很大。新人需要找极细分(比如"专给摄影师的发票")。</p></div>
+          </div>
           <div class="product-buttons">
             <a class="btn" href="https://www.hiveage.com/" target="_blank" rel="noopener">官网 &nearr;</a>
             <a class="btn" href="https://www.hiveage.com/pricing/" target="_blank" rel="noopener">定价 &nearr;</a>
@@ -860,6 +899,13 @@
           <div class="product-oneliner">面向音乐人的 iPhone 高音质录音 + AI 去噪。</div>
           <div class="product-tags">音频处理<span class="dot">&middot;</span>subscription<span class="dot">&middot;</span>德国</div>
           <div class="product-why">5 人分布式团队、$20/年的破坏性定价、只服务音乐人这一个 narrow vertical —— 反 horizontal 创作工具趋势的样本。</div>
+          <div class="product-detail">
+            <div class="detail-item"><div class="detail-label">解决什么问题</div><p>音乐人想用 iPhone 录灵感,但 iOS 自带录音质量差、不能区分人声和乐器。</p></div>
+            <div class="detail-item"><div class="detail-label">用户是谁</div><p>独立音乐人、词曲作者、声音采集爱好者、电吉他手。</p></div>
+            <div class="detail-item"><div class="detail-label">为什么付费</div><p>$20/年比专业录音笔便宜 10 倍,自动识别"这是吉他"、"这是人声",AI 去除嗡嗡声。</p></div>
+            <div class="detail-item"><div class="detail-label">技术原理</div><p>iOS 原生录音 + 用苹果手机自己的 AI 芯片跑去噪小模型(直接在你手机上算,不上传云端)+ App Store 内购计费。</p></div>
+            <div class="detail-item"><div class="detail-label">小团队怎么抄</div><p>iOS 开发(Swift)+ 找现成音频去噪模型 + Core ML(苹果的 AI 框架)+ App Store 上架。技术门槛中等。但音乐人市场很专业,需要真懂音乐才能做对产品。</p></div>
+          </div>
           <div class="product-buttons">
             <a class="btn" href="https://tape.it/" target="_blank" rel="noopener">官网 &nearr;</a>
             <a class="btn" href="https://tape.it/" target="_blank" rel="noopener">定价 &nearr;</a>
@@ -870,7 +916,14 @@
           <div class="product-name">Wisecut</div>
           <div class="product-oneliner">自动把长视频剪成带字幕的短片。</div>
           <div class="product-tags">视频处理<span class="dot">&middot;</span>subscription<span class="dot">&middot;</span>巴西</div>
-          <div class="product-why">巴西 São Paulo 兄弟创办、$1.29M 极小融资仍获 Tim Draper 个人 $1M 站台。Latino 创始人用资源 + 渠道打开美国市场的样本。</div>
+          <div class="product-why">巴西 São Paulo 兄弟创办、$1.29M 极小融资仍获 Tim Draper 个人 $1M 站台。</div>
+          <div class="product-detail">
+            <div class="detail-item"><div class="detail-label">解决什么问题</div><p>你有 1 小时的 YouTube 长视频,想剪成 10 个 60 秒的爆款短片发抖音 —— 手剪要 5 小时。</p></div>
+            <div class="detail-item"><div class="detail-label">用户是谁</div><p>YouTuber、课程作者、企业培训内容运营、新闻媒体。</p></div>
+            <div class="detail-item"><div class="detail-label">为什么付费</div><p>$29/月帮你自动找"高能片段"剪短 + 加字幕 + 调成竖屏 9:16。</p></div>
+            <div class="detail-item"><div class="detail-label">技术原理</div><p>用 Whisper 把音频转文字 + 算法找笑声/情绪高点 + ffmpeg 视频处理工具自动剪辑 + 自动生成字幕。</p></div>
+            <div class="detail-item"><div class="detail-label">小团队怎么抄</div><p>Whisper + 镜头切换检测 + ffmpeg + 字幕渲染 + Stripe。8-12 周。Submagic、Opus Clip 已经做大,新人难入。Wisecut 走"Latino 创始人 + Tim Draper 投资人脉"路线。</p></div>
+          </div>
           <div class="product-buttons">
             <a class="btn" href="https://www.wisecut.ai/" target="_blank" rel="noopener">官网 &nearr;</a>
             <a class="btn" href="https://www.wisecut.ai/pricing" target="_blank" rel="noopener">定价 &nearr;</a>
@@ -881,7 +934,14 @@
           <div class="product-name">Munch</div>
           <div class="product-oneliner">AI 从长视频中挑"最 viral"片段生成多平台短片。</div>
           <div class="product-tags">创作者工具<span class="dot">&middot;</span>subscription<span class="dot">&middot;</span>以色列</div>
-          <div class="product-why">Tel Aviv 团队、$7.2M Seed,明确定位 B2B marketing / agencies 而非个人 YouTuber —— Opus Clip 同赛道下的差异化定位样本。</div>
+          <div class="product-why">Tel Aviv 团队、$7.2M Seed,明确定位 B2B marketing / agencies 而非个人 YouTuber。</div>
+          <div class="product-detail">
+            <div class="detail-item"><div class="detail-label">解决什么问题</div><p>类似 Wisecut,但定位是"专业 B2B 营销团队"而非个人 YouTuber —— 需要更精准、更可商用的内容。</p></div>
+            <div class="detail-item"><div class="detail-label">用户是谁</div><p>品牌内容团队、营销 agencies、播客制作公司、企业 marketing 部门。</p></div>
+            <div class="detail-item"><div class="detail-label">为什么付费</div><p>$49/月起。带"和当前网红热点匹配"的 AI 分析,生成的短片更有传播力,适合品牌营销而非个人创作。</p></div>
+            <div class="detail-item"><div class="detail-label">技术原理</div><p>类似 Wisecut,但额外做"和当前社交热点对比"分析,推荐"现在发出去会火"的片段。底层还是 Whisper + ffmpeg + LLM。</p></div>
+            <div class="detail-item"><div class="detail-label">小团队怎么抄</div><p>类似 Wisecut。Munch 已经融了 $720 万,新人要走"更细的垂直"(比如"专给律师做内容营销视频")才有空间。</p></div>
+          </div>
           <div class="product-buttons">
             <a class="btn" href="https://www.getmunch.com/" target="_blank" rel="noopener">官网 &nearr;</a>
             <a class="btn" href="https://www.getmunch.com/pricing" target="_blank" rel="noopener">定价 &nearr;</a>
@@ -904,6 +964,13 @@
           <div class="product-oneliner">KWFinder 等 5 件套的低价 SEO 工具集。</div>
           <div class="product-tags">SEO 工具<span class="dot">&middot;</span>subscription<span class="dot">&middot;</span>斯洛伐克</div>
           <div class="product-why">在 Ahrefs / Semrush 两巨头中间用 1/10 价位($29 起)+ Slovakia 团队稳吃 SMB,11+ 年 bootstrapped 不融资。</div>
+          <div class="product-detail">
+            <div class="detail-item"><div class="detail-label">解决什么问题</div><p>你想做 SEO,但 Ahrefs 和 Semrush 都要 $129/月起,小博主和独立站长用不起。</p></div>
+            <div class="detail-item"><div class="detail-label">用户是谁</div><p>小博主、独立站长、本地小型 agency、SEO 顾问。</p></div>
+            <div class="detail-item"><div class="detail-label">为什么付费</div><p>$29/月就能做关键词调研 + 排名追踪 + 反链分析。功能比 Ahrefs 少 30%,价格便宜 90%。</p></div>
+            <div class="detail-item"><div class="detail-label">技术原理</div><p>每天通过付费接口查谷歌搜索结果 → 存到自家数据库 → 提供查询界面(看哪个词排名、谁链了你)。</p></div>
+            <div class="detail-item"><div class="detail-label">小团队怎么抄</div><p>用 DataForSEO 或 SerpApi(付费 SERP 数据接口)+ Postgres 存关键词 + React 仪表盘 + Stripe。8-12 周。难点是"数据库成本" —— 每查一次谷歌都要花钱,需要精算成本结构。</p></div>
+          </div>
           <div class="product-buttons">
             <a class="btn" href="https://mangools.com/" target="_blank" rel="noopener">官网 &nearr;</a>
             <a class="btn" href="https://mangools.com/plans-and-pricing" target="_blank" rel="noopener">定价 &nearr;</a>
@@ -915,6 +982,13 @@
           <div class="product-oneliner">邮件查找 + 验证 + 冷邮件序列 + 简易 CRM。</div>
           <div class="product-tags">营销自动化<span class="dot">&middot;</span>freemium<span class="dot">&middot;</span>乌克兰</div>
           <div class="product-why">战时乌克兰 Chernihiv 团队、完全不融资跑到 $22.7M ARR、150K 客户 —— "非西方 + 完全 bootstrap + 危机环境"三重叠加的稀有样本。</div>
+          <div class="product-detail">
+            <div class="detail-item"><div class="detail-label">解决什么问题</div><p>做 B2B 销售要找潜在客户的邮箱 + 自动发跟进序列。Apollo / Lemlist 是大玩家但贵。</p></div>
+            <div class="detail-item"><div class="detail-label">用户是谁</div><p>B2B 销售代表、外贸员、出海创业者、招聘者。</p></div>
+            <div class="detail-item"><div class="detail-label">为什么付费</div><p>$39/月起,比 Apollo($79+)便宜一半,功能差不多。</p></div>
+            <div class="detail-item"><div class="detail-label">技术原理</div><p>从 LinkedIn / 公司网站爬取公开邮箱 + 用算法验证邮箱有效性 + 用你的邮箱账号自动发跟进序列。</p></div>
+            <div class="detail-item"><div class="detail-label">小团队怎么抄</div><p>这赛道已经做到 $22.7M ARR,新人不容易。需要做超细分(比如"专给印度 IT 外包公司找客户的工具",或"专给猎头找候选人的邮箱工具")。</p></div>
+          </div>
           <div class="product-buttons">
             <a class="btn" href="https://snov.io/" target="_blank" rel="noopener">官网 &nearr;</a>
             <a class="btn" href="https://snov.io/pricing" target="_blank" rel="noopener">定价 &nearr;</a>
@@ -926,6 +1000,13 @@
           <div class="product-oneliner">面向 SaaS 公司的行为触发邮件 + 营销自动化。</div>
           <div class="product-tags">营销自动化<span class="dot">&middot;</span>subscription<span class="dot">&middot;</span>保加利亚</div>
           <div class="product-why">Sofia 双人团队对标 Customer.io / Klaviyo,$99 起 + SaaS-only 定位 + 东欧成本结构。</div>
+          <div class="product-detail">
+            <div class="detail-item"><div class="detail-label">解决什么问题</div><p>你的 SaaS 注册了 100 人但只有 10 个付费。你想给"试用第 3 天还没付费的人"自动发邮件,但 MailChimp 做不到这种"用户行为触发"。</p></div>
+            <div class="detail-item"><div class="detail-label">用户是谁</div><p>SaaS 公司的创始人、增长负责人、产品 marketing。</p></div>
+            <div class="detail-item"><div class="detail-label">为什么付费</div><p>$99/月专为 SaaS 设计的"用户行为 → 触发邮件"工具,比 Customer.io 便宜一半。</p></div>
+            <div class="detail-item"><div class="detail-label">技术原理</div><p>接收 webhook(你的 SaaS 通知 Encharge:用户做了某事)→ 内部规则引擎判断"是否触发"→ 调邮件发送服务发出。本质是一个事件驱动的工作流引擎。</p></div>
+            <div class="detail-item"><div class="detail-label">小团队怎么抄</div><p>Postgres + 消息队列(SQS 或 RabbitMQ)+ SendGrid + Stripe + Segment/Webhook 接入。10-12 周。难点是规则引擎(让用户能拖拽配置"如果 X 发生则发送 Y")。</p></div>
+          </div>
           <div class="product-buttons">
             <a class="btn" href="https://encharge.io/" target="_blank" rel="noopener">官网 &nearr;</a>
             <a class="btn" href="https://encharge.io/pricing" target="_blank" rel="noopener">定价 &nearr;</a>
@@ -937,6 +1018,13 @@
           <div class="product-oneliner">面向内容创作者 / 教练的极简邮件营销。</div>
           <div class="product-tags">营销自动化<span class="dot">&middot;</span>subscription<span class="dot">&middot;</span>印尼</div>
           <div class="product-why">Bali 独立 3 人团队、零广告、80% 折扣对标 incumbent 定价 —— 极罕见的东南亚 indie B2B SaaS 样本。</div>
+          <div class="product-detail">
+            <div class="detail-item"><div class="detail-label">解决什么问题</div><p>你是课程作者或教练,想做邮件列表赚钱,但 ConvertKit / MailChimp 又贵又复杂。</p></div>
+            <div class="detail-item"><div class="detail-label">用户是谁</div><p>课程作者、教练、newsletter 写手、独立内容创业者。</p></div>
+            <div class="detail-item"><div class="detail-label">为什么付费</div><p>比 ConvertKit($29 起)便宜 80%,够用就行。锁定低价用户(注册时的价格永久不涨)。</p></div>
+            <div class="detail-item"><div class="detail-label">技术原理</div><p>用 Amazon 的便宜邮件服务发邮件 + Postgres 数据库存订阅者 + 简单自动化规则 + Stripe。技术非常普通,优势在低价。</p></div>
+            <div class="detail-item"><div class="detail-label">小团队怎么抄</div><p>技术 4-6 周。但创始人已经把重心转向新项目 CartMango,BirdSend 是"维持状态"。新人可以借鉴它的"低价 + 不投广告 + 终身锁价"打法。</p></div>
+          </div>
           <div class="product-buttons">
             <a class="btn" href="https://birdsend.co/" target="_blank" rel="noopener">官网 &nearr;</a>
             <a class="btn" href="https://birdsend.co/pricing/" target="_blank" rel="noopener">定价 &nearr;</a>
@@ -948,6 +1036,13 @@
           <div class="product-oneliner">教练专用的客户日程 + 合同 + 收款 + 网站一站式。</div>
           <div class="product-tags">教练工具<span class="dot">&middot;</span>subscription<span class="dot">&middot;</span>英国</div>
           <div class="product-why">MeetEdgar 连续创业者第二次出手,只服务 coach 一个 vertical,$47.50 flat 定价反 HoneyBook 的按客户阶梯收费。</div>
+          <div class="product-detail">
+            <div class="detail-item"><div class="detail-label">解决什么问题</div><p>1 对 1 教练(职业教练、生活教练)要管理客户预约 + 收钱 + 签合同 + 发提醒。每件事一个工具,切换累。</p></div>
+            <div class="detail-item"><div class="detail-label">用户是谁</div><p>个人教练、咨询师、培训师、职业辅导师、健身私教。</p></div>
+            <div class="detail-item"><div class="detail-label">为什么付费</div><p>$47.50/月一站搞定,而不是 Calendly + Stripe + DocuSign + 邮件...组合。</p></div>
+            <div class="detail-item"><div class="detail-label">技术原理</div><p>Stripe 收款 + 日历 API + 电子签 + 邮件提醒。基本就是把 5 个工具的核心功能拼起来。技术非常简单。</p></div>
+            <div class="detail-item"><div class="detail-label">小团队怎么抄</div><p>Node/Rails + Stripe + Calendar API + 电子签库 + 邮件。4-6 周。HoneyBook 是大对手。Paperbell 的差异化是只服务 coach 一个垂直 + 不按客户数加价。</p></div>
+          </div>
           <div class="product-buttons">
             <a class="btn" href="https://paperbell.com/" target="_blank" rel="noopener">官网 &nearr;</a>
             <a class="btn" href="https://paperbell.com/pricing/" target="_blank" rel="noopener">定价 &nearr;</a>
@@ -959,6 +1054,13 @@
           <div class="product-oneliner">面向理疗 / 心理 / 综合诊所的预约 + 病历 + 收费。</div>
           <div class="product-tags">垂直行业<span class="dot">&middot;</span>subscription<span class="dot">&middot;</span>澳大利亚</div>
           <div class="product-why">Melbourne 独立公司、14 年价格不变、65,000 医疗专业人士付费、利润 2% 捐慈善 —— 完整的反增长主义 SaaS 哲学样本。</div>
+          <div class="product-detail">
+            <div class="detail-item"><div class="detail-label">解决什么问题</div><p>理疗师、心理咨询师开了诊所,需要管预约、写病历、收费、发短信提醒 —— 但行业巨头(Epic)是给大医院用的、贵且复杂。</p></div>
+            <div class="detail-item"><div class="detail-label">用户是谁</div><p>小型理疗诊所、心理咨询师、营养师、综合健康诊所、私人执业的医疗师。</p></div>
+            <div class="detail-item"><div class="detail-label">为什么付费</div><p>$45/月起,14 年不涨价。比同类工具便宜且界面友好,小诊所主可以自己用而不用 IT 团队。</p></div>
+            <div class="detail-item"><div class="detail-label">技术原理</div><p>网页 App + 日历 + Stripe 收款 + Twilio 发短信提醒。技术上不难,但医疗数据隐私合规(HIPAA、GDPR)是大坑。</p></div>
+            <div class="detail-item"><div class="detail-label">小团队怎么抄</div><p>技术 6-8 周。但医疗合规壁垒高,且 SimplePractice、Jane 是大对手。新人要从"超本地化"切入(比如"专给中国 TCM 中医诊所用")。</p></div>
+          </div>
           <div class="product-buttons">
             <a class="btn" href="https://www.cliniko.com/" target="_blank" rel="noopener">官网 &nearr;</a>
             <a class="btn" href="https://www.cliniko.com/pricing/" target="_blank" rel="noopener">定价 &nearr;</a>
@@ -970,6 +1072,13 @@
           <div class="product-oneliner">在白板上做可视化知识管理的笔记工具。</div>
           <div class="product-tags">个人效率<span class="dot">&middot;</span>subscription<span class="dot">&middot;</span>台湾</div>
           <div class="product-why">台湾 YC 出海、辍学创始人、无免费版 + $659 终身 license,在 Notion / Obsidian / Logseq 三巨头夹缝里做视觉差异化。</div>
+          <div class="product-detail">
+            <div class="detail-item"><div class="detail-label">解决什么问题</div><p>Notion 是写文档的,Obsidian 是做笔记网络的,但都看不到"知识之间的关系"。研究者、学生想在白板上画思维网络。</p></div>
+            <div class="detail-item"><div class="detail-label">用户是谁</div><p>研究人员、博士生、深度学习爱好者、PKM(个人知识管理)发烧友。</p></div>
+            <div class="detail-item"><div class="detail-label">为什么付费</div><p>$8.99/月提供"白板 + 卡片 + 关联"的独特体验。$659 终身 license 适合长期重度用户。</p></div>
+            <div class="detail-item"><div class="detail-label">技术原理</div><p>Electron 桌面 App + Canvas 绘图(在白板上画卡片)+ 卡片间画连线 + 自建云同步层(让多设备数据同步)。</p></div>
+            <div class="detail-item"><div class="detail-label">小团队怎么抄</div><p>Electron + Canvas/Konva 画图库 + 同步层(这部分很难) + Stripe。半年起步。难点是"实时多设备同步" + "画布上千张卡片性能不卡"。</p></div>
+          </div>
           <div class="product-buttons">
             <a class="btn" href="https://heptabase.com/" target="_blank" rel="noopener">官网 &nearr;</a>
             <a class="btn" href="https://heptabase.com/pricing" target="_blank" rel="noopener">定价 &nearr;</a>
@@ -981,6 +1090,13 @@
           <div class="product-oneliner">把多源任务和日历合并到一个 time-blocking 客户端。</div>
           <div class="product-tags">个人效率<span class="dot">&middot;</span>subscription<span class="dot">&middot;</span>意大利</div>
           <div class="product-why">意大利 Forbes Under 30 三人 + YC + $1.8M 种子。重客户端 + 多源聚合走 Sunsama / Motion 旁边的差异化路线,$19/月。</div>
+          <div class="product-detail">
+            <div class="detail-item"><div class="detail-label">解决什么问题</div><p>你的待办事项分散在 Todoist、Notion、Gmail、Slack。每天打开 4 个 App 找今天该做什么很累。</p></div>
+            <div class="detail-item"><div class="detail-label">用户是谁</div><p>重度多工具用户、time-blocking 实践者、注意力分散的知识工作者、远程办公者。</p></div>
+            <div class="detail-item"><div class="detail-label">为什么付费</div><p>$19/月把所有任务源拉到一个客户端,直接拖到日历做时间块。比 Sunsama 略便宜。</p></div>
+            <div class="detail-item"><div class="detail-label">技术原理</div><p>Electron 桌面 App + 接 20+ 个工具(Google Calendar、Notion、Todoist、Slack...)的官方接口 → 把所有待办拉过来 → 拖动到日历上做时间安排。</p></div>
+            <div class="detail-item"><div class="detail-label">小团队怎么抄</div><p>Electron + 多家接口集成(20+ 个) + 同步层 + Stripe。6 个月起。Sunsama 和 Motion 是大对手。Akiflow 有 YC 和 $180 万种子轮支持。</p></div>
+          </div>
           <div class="product-buttons">
             <a class="btn" href="https://akiflow.com/" target="_blank" rel="noopener">官网 &nearr;</a>
             <a class="btn" href="https://akiflow.com/pricing" target="_blank" rel="noopener">定价 &nearr;</a>
@@ -991,7 +1107,14 @@
           <div class="product-name">BeforeSunset AI</div>
           <div class="product-oneliner">AI 自动安排今日 todo 的日计划工具。</div>
           <div class="product-tags">个人效率<span class="dot">&middot;</span>freemium<span class="dot">&middot;</span>土耳其 / 美国</div>
-          <div class="product-why">土耳其 Izmir 起步、$250K 极小种子、Product Hunt 三连冠(Day / Week / Month)起家,后迁 NYC —— 土耳其创始人到美国市场的清晰路径。</div>
+          <div class="product-why">土耳其 Izmir 起步、$250K 极小种子、Product Hunt 三连冠(Day / Week / Month)起家,后迁 NYC。</div>
+          <div class="product-detail">
+            <div class="detail-item"><div class="detail-label">解决什么问题</div><p>你早上不知道今天先做什么、能做多少。手动规划费精力。</p></div>
+            <div class="detail-item"><div class="detail-label">用户是谁</div><p>知识工作者、远程办公者、自由职业者、决策疲劳者。</p></div>
+            <div class="detail-item"><div class="detail-label">为什么付费</div><p>让 AI 看你的待办,自动安排一天的时间表(几点做什么)。比自己规划省 15-20 分钟/天。</p></div>
+            <div class="detail-item"><div class="detail-label">技术原理</div><p>把待办文本和今天日历空隙发给 GPT → 让 GPT 安排"几点做什么"→ 把结果写回你的 Google Calendar。本质是 GPT 套了一层 UI。</p></div>
+            <div class="detail-item"><div class="detail-label">小团队怎么抄</div><p>OpenAI 接口 + Google Calendar + 网页前端 + Stripe。4 周可做。难点是"AI 安排得合不合理" —— 这本质是 prompt engineering(提示词工程)的工作。</p></div>
+          </div>
           <div class="product-buttons">
             <a class="btn" href="https://www.beforesunset.ai/" target="_blank" rel="noopener">官网 &nearr;</a>
             <a class="btn" href="https://www.beforesunset.ai/pricing" target="_blank" rel="noopener">定价 &nearr;</a>
@@ -1002,7 +1125,14 @@
           <div class="product-name">Outseta</div>
           <div class="product-oneliner">早期 B2B SaaS 的订阅 + CRM + 邮件 + 帮助台一体化。</div>
           <div class="product-tags">B2B 小工具<span class="dot">&middot;</span>other<span class="dot">&middot;</span>美国</div>
-          <div class="product-why">三创始人全员 $210K 同薪、transaction 抽成(2%→1%)而非席位定价、头 3 年才到 $1.5K MRR 仍坚持 —— 极罕见的长期主义运营哲学。</div>
+          <div class="product-why">三创始人全员 $210K 同薪、transaction 抽成(2%→1%)而非席位定价、头 3 年才到 $1.5K MRR 仍坚持。</div>
+          <div class="product-detail">
+            <div class="detail-item"><div class="detail-label">解决什么问题</div><p>你要做一个 SaaS,需要订阅收费 + 用户管理 + 邮件 + 工单。拼装 5 个工具(Stripe + Auth0 + Mailchimp + Intercom...)太累。</p></div>
+            <div class="detail-item"><div class="detail-label">用户是谁</div><p>刚起步的 indie SaaS 创始人、做付费会员业务的小公司、知识付费创业者。</p></div>
+            <div class="detail-item"><div class="detail-label">为什么付费</div><p>Outseta 把上面 5 件事打包,你只接入一次。按交易额收 2% 抽成,前期没有营收时几乎免费。</p></div>
+            <div class="detail-item"><div class="detail-label">技术原理</div><p>在自家 Stripe 之上做了一层 SDK(开发者在网站嵌入 5 行代码就能用)+ 自家 CRM、邮件、客服工单系统打包。</p></div>
+            <div class="detail-item"><div class="detail-label">小团队怎么抄</div><p>这个赛道极卷(Bubble、Memberstack、MemberSpace、Outseta 等),新人不容易。但 Outseta 的"全员 $210K 同薪 + 不融资 + 10 年长期主义"运营哲学非常值得学。</p></div>
+          </div>
           <div class="product-buttons">
             <a class="btn" href="https://www.outseta.com/" target="_blank" rel="noopener">官网 &nearr;</a>
             <a class="btn" href="https://www.outseta.com/pricing" target="_blank" rel="noopener">定价 &nearr;</a>
